@@ -4,17 +4,17 @@ This URDF was automatically created by SolidWorks to URDF Exporter! Originally c
 Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
 For more information, please see http://wiki.ros.org/sw_urdf_exporter
 -->
-<robot name="pai_2_12_240715">
+<robot name="pai_2_12_240723">
 	<link name="base_link">
 		<inertial>
 			<origin xyz="0.02264846 -0.00004298 0.03856462" rpy="0 0 0" />
-			<mass value="0.767987723282303" />
+			<mass value="1.767987723282303" />
 			<inertia ixx="0.00715641" ixy="-0.00000351" ixz="-0.00040457" iyy="0.00754610" iyz="0.00000400" izz="0.00985603" />
 		</inertial>
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://pai_2_12_240715/meshes/base_link.STL" />
+				<mesh filename="package://pai_2_12_240723/meshes/base_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
@@ -23,20 +23,20 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<collision>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://pai_2_12_240715/meshes/base_link.STL" />
+				<mesh filename="package://pai_2_12_240723/meshes/base_link.STL" />
 			</geometry>
 		</collision>
 	</link>
-	<link name="r_kuan_link">
+	<link name="r_hip_yaw_link">
 		<inertial>
-			<origin xyz="-0.05302 -6.9044E-05 -0.049742" rpy="0 0 0" />
-			<mass value="0.41495" />
-			<inertia ixx="0.00014662" ixy="3.1568E-08" ixz="1.0089E-06" iyy="9.0268E-05" iyz="-5.5058E-07" izz="9.3499E-05" />
+			<origin xyz="-0.05317432 -0.00007017 -0.05024259" rpy="0 0 0" />
+			<mass value="0.40825297" />
+			<inertia ixx="0.00024215" ixy="-0.00000027" ixz="-0.00006446" iyy="0.00026252" iyz="0.00000037" izz="0.00016997" />
 		</inertial>
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://pai_2_12_240715/meshes/r_kuan_link.STL" />
+				<mesh filename="package://pai_2_12_240723/meshes/r_hip_yaw_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.75294 0.75294 0.75294 1" />
@@ -45,27 +45,27 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<collision>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://pai_2_12_240715/meshes/r_kuan_link.STL" />
+				<mesh filename="package://pai_2_12_240723/meshes/r_hip_yaw_link.STL" />
 			</geometry>
 		</collision>
 	</link>
-	<joint name="r_kuan_joint" type="revolute">
-		<origin xyz="-0.00312500000000175 -0.0749999999999948 -0.00900000000000054" rpy="0 0 0" />
+	<joint name="r_hip_yaw_joint" type="revolute">
+		<origin xyz="-0.003125 -0.075 -0.009" rpy="0 0 0" />
 		<parent link="base_link" />
-		<child link="r_kuan_link" />
+		<child link="r_hip_yaw_link" />
 		<axis xyz="0 0 1" />
 		<limit lower="-3.14" upper="3.14" effort="21" velocity="21" />
 	</joint>
-	<link name="r_kuan2_link">
+	<link name="r_hip_roll_link">
 		<inertial>
-			<origin xyz="-0.00165182311958494 2.22472734678902E-11 9.01459013308153E-05" rpy="0 0 0" />
-			<mass value="0.754052172373753" />
-			<inertia ixx="0.000172300621783178" ixy="-1.00230457516306E-13" ixz="4.85738731803001E-08" iyy="0.000284991278195394" iyz="-6.30364775234662E-08" izz="0.000168111256664181" />
+			<origin xyz="-0.00165182 0.0 0.00009013" rpy="0 0 0" />
+			<mass value="0.75405217" />
+			<inertia ixx="0.00114977" ixy="0.0" ixz="0.00000182" iyy="0.00031770" iyz="0.00000238" izz="0.00117774" />
 		</inertial>
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://pai_2_12_240715/meshes/r_kuan2_link.STL" />
+				<mesh filename="package://pai_2_12_240723/meshes/r_hip_roll_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
@@ -74,14 +74,14 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<collision>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://pai_2_12_240715/meshes/r_kuan2_link.STL" />
+				<mesh filename="package://pai_2_12_240723/meshes/r_hip_roll_link.STL" />
 			</geometry>
 		</collision>
 	</link>
-	<joint name="r_kuan2_joint" type="revolute">
-		<origin xyz="0 0 -0.0559999999999995" rpy="0 0 0" />
-		<parent link="r_kuan_link" />
-		<child link="r_kuan2_link" />
+	<joint name="r_hip_roll_joint" type="revolute">
+		<origin xyz="0 0 -0.056" rpy="0 0 0" />
+		<parent link="r_hip_yaw_link" />
+		<child link="r_hip_roll_link" />
 		<axis xyz="1 0 0" />
 		<limit lower="-3.14" upper="3.14" effort="21" velocity="21" />
 	</joint>
@@ -94,7 +94,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://pai_2_12_240715/meshes/r_thigh_link.STL" />
+				<mesh filename="package://pai_2_12_240723/meshes/r_thigh_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
@@ -103,13 +103,13 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<collision>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://pai_2_12_240715/meshes/r_thigh_link.STL" />
+				<mesh filename="package://pai_2_12_240723/meshes/r_thigh_link.STL" />
 			</geometry>
 		</collision>
 	</link>
 	<joint name="r_thigh_joint" type="revolute">
 		<origin xyz="0 0 0" rpy="0 0 0" />
-		<parent link="r_kuan2_link" />
+		<parent link="r_hip_roll_link" />
 		<child link="r_thigh_link" />
 		<axis xyz="0 -1 0" />
 		<limit lower="-3.14" upper="3.14" effort="21" velocity="21" />
@@ -123,7 +123,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://pai_2_12_240715/meshes/r_calf_link.STL" />
+				<mesh filename="package://pai_2_12_240723/meshes/r_calf_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
@@ -132,18 +132,18 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<collision>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://pai_2_12_240715/meshes/r_calf_link.STL" />
+				<mesh filename="package://pai_2_12_240723/meshes/r_calf_link.STL" />
 			</geometry>
 		</collision>
 	</link>
 	<joint name="r_calf_joint" type="revolute">
-		<origin xyz="0.00750000000000106 0 -0.149812382665787" rpy="0 0 0" />
+		<origin xyz="0.0075 0 -0.149812382665786" rpy="0 0 0" />
 		<parent link="r_thigh_link" />
 		<child link="r_calf_link" />
 		<axis xyz="0 1 0" />
 		<limit lower="-3.14" upper="3.14" effort="21" velocity="21" />
 	</joint>
-	<link name="r_ankle_link">
+	<link name="r_ankle_pitch_link">
 		<inertial>
 			<origin xyz="-1.6509E-07 -3.5454E-07 1.0424E-08" rpy="0 0 0" />
 			<mass value="0.01180204" />
@@ -152,7 +152,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://pai_2_12_240715/meshes/r_ankle_link.STL" />
+				<mesh filename="package://pai_2_12_240723/meshes/r_ankle_pitch_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.89804 0.91765 0.92941 1" />
@@ -161,18 +161,18 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<collision>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://pai_2_12_240715/meshes/r_ankle_link.STL" />
+				<mesh filename="package://pai_2_12_240723/meshes/r_ankle_pitch_link.STL" />
 			</geometry>
 		</collision>
 	</link>
-	<joint name="r_ankle_joint" type="revolute">
+	<joint name="r_ankle_pitch_joint" type="revolute">
 		<origin xyz="0 0 -0.17495" rpy="0 0 0" />
 		<parent link="r_calf_link" />
-		<child link="r_ankle_link" />
+		<child link="r_ankle_pitch_link" />
 		<axis xyz="0 -1 0" />
 		<limit lower="-3.14" upper="3.14" effort="21" velocity="21" />
 	</joint>
-	<link name="r_foot_link">
+	<link name="r_ankle_roll_link">
 		<inertial>
 			<origin xyz="0.01979902 0.00000141 -0.02023932" rpy="0 0 0" />
 			<mass value="0.18592619" />
@@ -181,7 +181,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://pai_2_12_240715/meshes/r_foot_link.STL" />
+				<mesh filename="package://pai_2_12_240723/meshes/r_ankle_roll_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
@@ -190,27 +190,27 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<collision>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://pai_2_12_240715/meshes/r_foot_link.STL" />
+				<mesh filename="package://pai_2_12_240723/meshes/r_ankle_roll_link.STL" />
 			</geometry>
 		</collision>
 	</link>
-	<joint name="r_foot_joint" type="revolute">
+	<joint name="r_ankle_roll_joint" type="revolute">
 		<origin xyz="0 0 0" rpy="0 0 0" />
-		<parent link="r_ankle_link" />
-		<child link="r_foot_link" />
+		<parent link="r_ankle_pitch_link" />
+		<child link="r_ankle_roll_link" />
 		<axis xyz="-1 0 0" />
 		<limit lower="-3.14" upper="3.14" effort="21" velocity="21" />
 	</joint>
-	<link name="l_kuan_link">
+	<link name="l_hip_yaw_link">
 		<inertial>
-			<origin xyz="-0.05302 -6.9044E-05 -0.049742" rpy="0 0 0" />
-			<mass value="0.41495" />
-			<inertia ixx="0.00014662" ixy="3.1568E-08" ixz="1.0089E-06" iyy="9.0268E-05" iyz="-5.5058E-07" izz="9.3499E-05" />
+			<origin xyz="-0.05317432 -0.00007017 -0.05024259" rpy="0 0 0" />
+			<mass value="0.40825297" />
+			<inertia ixx="0.00024215" ixy="-0.00000027" ixz="-0.00006446" iyy="0.00026252" iyz="0.00000037" izz="0.00016997" />
 		</inertial>
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://pai_2_12_240715/meshes/l_kuan_link.STL" />
+				<mesh filename="package://pai_2_12_240723/meshes/l_hip_yaw_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.75294 0.75294 0.75294 1" />
@@ -219,27 +219,27 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<collision>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://pai_2_12_240715/meshes/l_kuan_link.STL" />
+				<mesh filename="package://pai_2_12_240723/meshes/l_hip_yaw_link.STL" />
 			</geometry>
 		</collision>
 	</link>
-	<joint name="l_kuan_joint" type="revolute">
-		<origin xyz="-0.00312500000000005 0.0750000000000056 -0.00900000000000056" rpy="0 0 0" />
+	<joint name="l_hip_yaw_joint" type="revolute">
+		<origin xyz="-0.003125 0.075 -0.009" rpy="0 0 0" />
 		<parent link="base_link" />
-		<child link="l_kuan_link" />
+		<child link="l_hip_yaw_link" />
 		<axis xyz="0 0 1" />
 		<limit lower="-3.14" upper="3.14" effort="21" velocity="21" />
 	</joint>
-	<link name="l_kuan2_link">
+	<link name="l_hip_roll_link">
 		<inertial>
-			<origin xyz="-0.00165182311958486 2.2247287345678E-11 9.01459013308153E-05" rpy="0 0 0" />
-			<mass value="0.754052172373753" />
-			<inertia ixx="0.000172300621783178" ixy="-1.00230445305323E-13" ixz="4.85738731803103E-08" iyy="0.000284991278195395" iyz="-6.30364775234683E-08" izz="0.000168111256664181" />
+			<origin xyz="-0.00165182 0.0 0.00009013" rpy="0 0 0" />
+			<mass value="0.75405217" />
+			<inertia ixx="0.00114977" ixy="0.0" ixz="0.00000182" iyy="0.00031770" iyz="0.00000238" izz="0.00117774" />
 		</inertial>
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://pai_2_12_240715/meshes/l_kuan2_link.STL" />
+				<mesh filename="package://pai_2_12_240723/meshes/l_hip_roll_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
@@ -248,14 +248,14 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<collision>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://pai_2_12_240715/meshes/l_kuan2_link.STL" />
+				<mesh filename="package://pai_2_12_240723/meshes/l_hip_roll_link.STL" />
 			</geometry>
 		</collision>
 	</link>
-	<joint name="l_kuan2_joint" type="revolute">
+	<joint name="l_hip_roll_joint" type="revolute">
 		<origin xyz="0 0 -0.056" rpy="0 0 0" />
-		<parent link="l_kuan_link" />
-		<child link="l_kuan2_link" />
+		<parent link="l_hip_yaw_link" />
+		<child link="l_hip_roll_link" />
 		<axis xyz="1 0 0" />
 		<limit lower="-3.14" upper="3.14" effort="21" velocity="21" />
 	</joint>
@@ -268,7 +268,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://pai_2_12_240715/meshes/l_thigh_link.STL" />
+				<mesh filename="package://pai_2_12_240723/meshes/l_thigh_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
@@ -277,13 +277,13 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<collision>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://pai_2_12_240715/meshes/l_thigh_link.STL" />
+				<mesh filename="package://pai_2_12_240723/meshes/l_thigh_link.STL" />
 			</geometry>
 		</collision>
 	</link>
 	<joint name="l_thigh_joint" type="revolute">
 		<origin xyz="0 0 0" rpy="0 0 0" />
-		<parent link="l_kuan2_link" />
+		<parent link="l_hip_roll_link" />
 		<child link="l_thigh_link" />
 		<axis xyz="0 -1 0" />
 		<limit lower="-3.14" upper="3.14" effort="21" velocity="21" />
@@ -297,7 +297,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://pai_2_12_240715/meshes/l_calf_link.STL" />
+				<mesh filename="package://pai_2_12_240723/meshes/l_calf_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.75294 0.75294 0.75294 1" />
@@ -306,18 +306,18 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<collision>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://pai_2_12_240715/meshes/l_calf_link.STL" />
+				<mesh filename="package://pai_2_12_240723/meshes/l_calf_link.STL" />
 			</geometry>
 		</collision>
 	</link>
 	<joint name="l_calf_joint" type="revolute">
-		<origin xyz="0.00750000000000105 0 -0.149812382665786" rpy="0 0 0" />
+		<origin xyz="0.0075 0 -0.149812382665786" rpy="0 0 0" />
 		<parent link="l_thigh_link" />
 		<child link="l_calf_link" />
 		<axis xyz="0 1 0" />
 		<limit lower="-3.14" upper="3.14" effort="21" velocity="21" />
 	</joint>
-	<link name="l_ankle_link">
+	<link name="l_ankle_pitch_link">
 		<inertial>
 			<origin xyz="-1.6509E-07 -3.5454E-07 1.0424E-08" rpy="0 0 0" />
 			<mass value="0.01180204" />
@@ -326,7 +326,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://pai_2_12_240715/meshes/l_ankle_link.STL" />
+				<mesh filename="package://pai_2_12_240723/meshes/l_ankle_pitch_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
@@ -335,18 +335,18 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<collision>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://pai_2_12_240715/meshes/l_ankle_link.STL" />
+				<mesh filename="package://pai_2_12_240723/meshes/l_ankle_pitch_link.STL" />
 			</geometry>
 		</collision>
 	</link>
-	<joint name="l_ankle_joint" type="revolute">
+	<joint name="l_ankle_pitch_joint" type="revolute">
 		<origin xyz="0 0 -0.17495" rpy="0 0 0" />
 		<parent link="l_calf_link" />
-		<child link="l_ankle_link" />
+		<child link="l_ankle_pitch_link" />
 		<axis xyz="0 -1 0" />
 		<limit lower="-3.14" upper="3.14" effort="21" velocity="21" />
 	</joint>
-	<link name="l_foot_link">
+	<link name="l_ankle_roll_link">
 		<inertial>
 			<origin xyz="0.01979902 0.00000141 -0.02023932" rpy="0 0 0" />
 			<mass value="0.18592619" />
@@ -355,7 +355,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://pai_2_12_240715/meshes/l_foot_link.STL" />
+				<mesh filename="package://pai_2_12_240723/meshes/l_ankle_roll_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
@@ -364,14 +364,14 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<collision>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://pai_2_12_240715/meshes/l_foot_link.STL" />
+				<mesh filename="package://pai_2_12_240723/meshes/l_ankle_roll_link.STL" />
 			</geometry>
 		</collision>
 	</link>
-	<joint name="l_foot_joint" type="revolute">
+	<joint name="l_ankle_roll_joint" type="revolute">
 		<origin xyz="0 0 0" rpy="0 0 0" />
-		<parent link="l_ankle_link" />
-		<child link="l_foot_link" />
+		<parent link="l_ankle_pitch_link" />
+		<child link="l_ankle_roll_link" />
 		<axis xyz="-1 0 0" />
 		<limit lower="-3.14" upper="3.14" effort="21" velocity="21" />
 	</joint>

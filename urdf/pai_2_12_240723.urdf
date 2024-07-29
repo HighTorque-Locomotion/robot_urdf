@@ -54,7 +54,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<parent link="base_link" />
 		<child link="r_hip_yaw_link" />
 		<axis xyz="0 0 1" />
-		<limit lower="-3.14" upper="3.14" effort="21" velocity="21" />
+		<limit lower="-0.6" upper="0.6" effort="21" velocity="21" />
 	</joint>
 	<link name="r_hip_roll_link">
 		<inertial>
@@ -83,7 +83,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<parent link="r_hip_yaw_link" />
 		<child link="r_hip_roll_link" />
 		<axis xyz="1 0 0" />
-		<limit lower="-3.14" upper="3.14" effort="21" velocity="21" />
+		<limit lower="-0.4" upper="0.22" effort="21" velocity="21" />
 	</joint>
 	<link name="r_thigh_link">
 		<inertial>
@@ -108,11 +108,11 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		</collision>
 	</link>
 	<joint name="r_thigh_joint" type="revolute">
-		<origin xyz="0 0 0" rpy="0 0 0" />
+		<origin xyz="0 0 0" rpy="0 0.05009 0" />
 		<parent link="r_hip_roll_link" />
 		<child link="r_thigh_link" />
-		<axis xyz="0 -1 0" />
-		<limit lower="-3.14" upper="3.14" effort="21" velocity="21" />
+		<axis xyz="0 1 0" />
+		<limit lower="-2.25" upper="0.4" effort="21" velocity="21" />
 	</joint>
 	<link name="r_calf_link">
 		<inertial>
@@ -137,11 +137,11 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		</collision>
 	</link>
 	<joint name="r_calf_joint" type="revolute">
-		<origin xyz="0.0075 0 -0.149812382665786" rpy="0 0 0" />
+		<origin xyz="0.0075 0 -0.149812382665786" rpy="0 -0.05009 0" />
 		<parent link="r_thigh_link" />
 		<child link="r_calf_link" />
 		<axis xyz="0 1 0" />
-		<limit lower="-3.14" upper="3.14" effort="21" velocity="21" />
+		<limit lower="0.0" upper="2.37" effort="21" velocity="21" />
 	</joint>
 	<link name="r_ankle_pitch_link">
 		<inertial>
@@ -169,8 +169,8 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<origin xyz="0 0 -0.17495" rpy="0 0 0" />
 		<parent link="r_calf_link" />
 		<child link="r_ankle_pitch_link" />
-		<axis xyz="0 -1 0" />
-		<limit lower="-3.14" upper="3.14" effort="21" velocity="21" />
+		<axis xyz="0 1 0" />
+		<limit lower="-0.83" upper="0.59" effort="21" velocity="21" />
 	</joint>
 	<link name="r_ankle_roll_link">
 		<inertial>
@@ -198,8 +198,8 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<origin xyz="0 0 0" rpy="0 0 0" />
 		<parent link="r_ankle_pitch_link" />
 		<child link="r_ankle_roll_link" />
-		<axis xyz="-1 0 0" />
-		<limit lower="-3.14" upper="3.14" effort="21" velocity="21" />
+		<axis xyz="1 0 0" />
+		<limit lower="-0.4" upper="0.4" effort="21" velocity="21" />
 	</joint>
 	<link name="l_hip_yaw_link">
 		<inertial>
@@ -228,7 +228,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<parent link="base_link" />
 		<child link="l_hip_yaw_link" />
 		<axis xyz="0 0 1" />
-		<limit lower="-3.14" upper="3.14" effort="21" velocity="21" />
+		<limit lower="-0.6" upper="0.6" effort="21" velocity="21" />
 	</joint>
 	<link name="l_hip_roll_link">
 		<inertial>
@@ -257,7 +257,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<parent link="l_hip_yaw_link" />
 		<child link="l_hip_roll_link" />
 		<axis xyz="1 0 0" />
-		<limit lower="-3.14" upper="3.14" effort="21" velocity="21" />
+		<limit lower="-0.22" upper="0.4" effort="21" velocity="21" />
 	</joint>
 	<link name="l_thigh_link">
 		<inertial>
@@ -285,8 +285,8 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<origin xyz="0 0 0" rpy="0 0 0" />
 		<parent link="l_hip_roll_link" />
 		<child link="l_thigh_link" />
-		<axis xyz="0 -1 0" />
-		<limit lower="-3.14" upper="3.14" effort="21" velocity="21" />
+		<axis xyz="0 1 0" />
+		<limit lower="-2.25" upper="0.4" effort="21" velocity="21" />
 	</joint>
 	<link name="l_calf_link">
 		<inertial>
@@ -315,7 +315,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<parent link="l_thigh_link" />
 		<child link="l_calf_link" />
 		<axis xyz="0 1 0" />
-		<limit lower="-3.14" upper="3.14" effort="21" velocity="21" />
+		<limit lower="0.0" upper="2.37" effort="21" velocity="21" />
 	</joint>
 	<link name="l_ankle_pitch_link">
 		<inertial>
@@ -343,8 +343,8 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<origin xyz="0 0 -0.17495" rpy="0 0 0" />
 		<parent link="l_calf_link" />
 		<child link="l_ankle_pitch_link" />
-		<axis xyz="0 -1 0" />
-		<limit lower="-3.14" upper="3.14" effort="21" velocity="21" />
+		<axis xyz="0 1 0" />
+		<limit lower="-0.83" upper="0.59" effort="21" velocity="21" />
 	</joint>
 	<link name="l_ankle_roll_link">
 		<inertial>
@@ -372,7 +372,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<origin xyz="0 0 0" rpy="0 0 0" />
 		<parent link="l_ankle_pitch_link" />
 		<child link="l_ankle_roll_link" />
-		<axis xyz="-1 0 0" />
-		<limit lower="-3.14" upper="3.14" effort="21" velocity="21" />
+		<axis xyz="1 0 0" />
+		<limit lower="-0.4" upper="0.4" effort="21" velocity="21" />
 	</joint>
 </robot>

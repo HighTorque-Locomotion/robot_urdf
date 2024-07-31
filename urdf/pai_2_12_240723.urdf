@@ -14,7 +14,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="/home/hpx/HPXLoco/engineai_legged_gym/resources/robots/livelybot_urdf/meshes/base_link.STL" />
+				<mesh filename="package://pai_2_12_240723/meshes/base_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
@@ -23,11 +23,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<collision>
 			<origin xyz="0 0 0.03" rpy="0 0 0" />
 			<geometry>
-<<<<<<< HEAD
 				<box size="0.2 0.08 0.08" />
-=======
-				<mesh filename="/home/hpx/HPXLoco/engineai_legged_gym/resources/robots/livelybot_urdf/meshes/base_link.STL" />
->>>>>>> 6fa054bd440d801ee6f57369ad910b3c2fc98a87
 			</geometry>
 		</collision>
 	</link>
@@ -40,7 +36,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="/home/hpx/HPXLoco/engineai_legged_gym/resources/robots/livelybot_urdf/meshes/r_hip_yaw_link.STL" />
+				<mesh filename="package://pai_2_12_240723/meshes/r_hip_yaw_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.75294 0.75294 0.75294 1" />
@@ -49,11 +45,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<collision>
 			<origin xyz="0 0 -0.01" rpy="0 0 0" />
 			<geometry>
-<<<<<<< HEAD
 				<box size="0.01 0.01 0.01" />
-=======
-				<mesh filename="/home/hpx/HPXLoco/engineai_legged_gym/resources/robots/livelybot_urdf/meshes/r_hip_yaw_link.STL" />
->>>>>>> 6fa054bd440d801ee6f57369ad910b3c2fc98a87
 			</geometry>
 		</collision>
 	</link>
@@ -73,7 +65,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="/home/hpx/HPXLoco/engineai_legged_gym/resources/robots/livelybot_urdf/meshes/r_hip_roll_link.STL" />
+				<mesh filename="package://pai_2_12_240723/meshes/r_hip_roll_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
@@ -82,11 +74,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<collision>
 			<origin xyz="-0.03 0 0" rpy="0 0 0" />
 			<geometry>
-<<<<<<< HEAD
 				<box size="0.01 0.01 0.01" />
-=======
-				<mesh filename="/home/hpx/HPXLoco/engineai_legged_gym/resources/robots/livelybot_urdf/meshes/r_hip_roll_link.STL" />
->>>>>>> 6fa054bd440d801ee6f57369ad910b3c2fc98a87
 			</geometry>
 		</collision>
 	</link>
@@ -104,13 +92,9 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 			<inertia ixx="0.00076454" ixy="0.00000004" ixz="0.00000008" iyy="0.00077056" iyz="0.00002142" izz="0.00004054" />
 		</inertial>
 		<visual>
-			<origin xyz="0 0 -0.075" rpy="0 -0.05009 0" />
+			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-<<<<<<< HEAD
-				<box size="0.02 0.02 0.12" />
-=======
-				<mesh filename="/home/hpx/HPXLoco/engineai_legged_gym/resources/robots/livelybot_urdf/meshes/r_thigh_link.STL" />
->>>>>>> 6fa054bd440d801ee6f57369ad910b3c2fc98a87
+				<mesh filename="package://pai_2_12_240723/meshes/l_thigh_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
@@ -119,11 +103,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<collision>
 			<origin xyz="0 0 -0.075" rpy="0 -0.05009 0" />
 			<geometry>
-<<<<<<< HEAD
 				<box size="0.02 0.02 0.12" />
-=======
-				<mesh filename="/home/hpx/HPXLoco/engineai_legged_gym/resources/robots/livelybot_urdf/meshes/r_thigh_link.STL" />
->>>>>>> 6fa054bd440d801ee6f57369ad910b3c2fc98a87
 			</geometry>
 		</collision>
 	</link>
@@ -143,7 +123,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="/home/hpx/HPXLoco/engineai_legged_gym/resources/robots/livelybot_urdf/meshes/r_calf_link.STL" />
+				<mesh filename="package://pai_2_12_240723/meshes/r_calf_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
@@ -152,11 +132,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<collision>
 			<origin xyz="0 0 -0.075" rpy="0 0 0" />
 			<geometry>
-<<<<<<< HEAD
 				<box size="0.03 0.035 0.12" />
-=======
-				<mesh filename="/home/hpx/HPXLoco/engineai_legged_gym/resources/robots/livelybot_urdf/meshes/r_calf_link.STL" />
->>>>>>> 6fa054bd440d801ee6f57369ad910b3c2fc98a87
 			</geometry>
 		</collision>
 	</link>
@@ -176,11 +152,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-<<<<<<< HEAD
 				<box size="0.01 0.01 0.01" />
-=======
-				<mesh filename="/home/hpx/HPXLoco/engineai_legged_gym/resources/robots/livelybot_urdf/meshes/r_ankle_pitch_link.STL" />
->>>>>>> 6fa054bd440d801ee6f57369ad910b3c2fc98a87
 			</geometry>
 			<material name="">
 				<color rgba="0.89804 0.91765 0.92941 1" />
@@ -189,11 +161,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<collision>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-<<<<<<< HEAD
 				<box size="0.01 0.01 0.01" />
-=======
-				<mesh filename="/home/hpx/HPXLoco/engineai_legged_gym/resources/robots/livelybot_urdf/meshes/r_ankle_pitch_link.STL" />
->>>>>>> 6fa054bd440d801ee6f57369ad910b3c2fc98a87
 			</geometry>
 		</collision>
 	</link>
@@ -213,7 +181,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="/home/hpx/HPXLoco/engineai_legged_gym/resources/robots/livelybot_urdf/meshes/r_ankle_roll_link.STL" />
+				<mesh filename="package://pai_2_12_240723/meshes/r_ankle_roll_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
@@ -222,7 +190,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<collision>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="/home/hpx/HPXLoco/engineai_legged_gym/resources/robots/livelybot_urdf/meshes/r_ankle_roll_link.STL" />
+				<mesh filename="package://pai_2_12_240723/meshes/r_ankle_roll_link.STL" />
 			</geometry>
 		</collision>
 	</link>
@@ -242,7 +210,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="/home/hpx/HPXLoco/engineai_legged_gym/resources/robots/livelybot_urdf/meshes/l_hip_yaw_link.STL" />
+				<mesh filename="package://pai_2_12_240723/meshes/l_hip_yaw_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.75294 0.75294 0.75294 1" />
@@ -251,11 +219,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<collision>
 			<origin xyz="0 0 -0.01" rpy="0 0 0" />
 			<geometry>
-<<<<<<< HEAD
 				<box size="0.01 0.01 0.01" />
-=======
-				<mesh filename="/home/hpx/HPXLoco/engineai_legged_gym/resources/robots/livelybot_urdf/meshes/l_hip_yaw_link.STL" />
->>>>>>> 6fa054bd440d801ee6f57369ad910b3c2fc98a87
 			</geometry>
 		</collision>
 	</link>
@@ -275,7 +239,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="/home/hpx/HPXLoco/engineai_legged_gym/resources/robots/livelybot_urdf/meshes/l_hip_roll_link.STL" />
+				<mesh filename="package://pai_2_12_240723/meshes/l_hip_roll_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
@@ -284,11 +248,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<collision>
 			<origin xyz="-0.03 0 0" rpy="0 0 0" />
 			<geometry>
-<<<<<<< HEAD
 				<box size="0.01 0.01 0.01" />
-=======
-				<mesh filename="/home/hpx/HPXLoco/engineai_legged_gym/resources/robots/livelybot_urdf/meshes/l_hip_roll_link.STL" />
->>>>>>> 6fa054bd440d801ee6f57369ad910b3c2fc98a87
 			</geometry>
 		</collision>
 	</link>
@@ -308,7 +268,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="/home/hpx/HPXLoco/engineai_legged_gym/resources/robots/livelybot_urdf/meshes/l_thigh_link.STL" />
+				<mesh filename="package://pai_2_12_240723/meshes/l_thigh_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
@@ -317,11 +277,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<collision>
 			<origin xyz="0 0 -0.075" rpy="0 -0.05009 0" />
 			<geometry>
-<<<<<<< HEAD
 				<box size="0.02 0.02 0.12" />
-=======
-				<mesh filename="/home/hpx/HPXLoco/engineai_legged_gym/resources/robots/livelybot_urdf/meshes/l_thigh_link.STL" />
->>>>>>> 6fa054bd440d801ee6f57369ad910b3c2fc98a87
 			</geometry>
 		</collision>
 	</link>
@@ -341,7 +297,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="/home/hpx/HPXLoco/engineai_legged_gym/resources/robots/livelybot_urdf/meshes/l_calf_link.STL" />
+				<mesh filename="package://pai_2_12_240723/meshes/l_calf_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.75294 0.75294 0.75294 1" />
@@ -350,11 +306,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<collision>
 			<origin xyz="0 0 -0.075" rpy="0 0 0" />
 			<geometry>
-<<<<<<< HEAD
 				<box size="0.03 0.035 0.12" />
-=======
-				<mesh filename="/home/hpx/HPXLoco/engineai_legged_gym/resources/robots/livelybot_urdf/meshes/l_calf_link.STL" />
->>>>>>> 6fa054bd440d801ee6f57369ad910b3c2fc98a87
 			</geometry>
 		</collision>
 	</link>
@@ -374,7 +326,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="/home/hpx/HPXLoco/engineai_legged_gym/resources/robots/livelybot_urdf/meshes/l_ankle_pitch_link.STL" />
+				<mesh filename="package://pai_2_12_240723/meshes/l_ankle_pitch_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
@@ -383,11 +335,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<collision>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-<<<<<<< HEAD
 				<box size="0.01 0.01 0.01" />
-=======
-				<mesh filename="/home/hpx/HPXLoco/engineai_legged_gym/resources/robots/livelybot_urdf/meshes/l_ankle_pitch_link.STL" />
->>>>>>> 6fa054bd440d801ee6f57369ad910b3c2fc98a87
 			</geometry>
 		</collision>
 	</link>
@@ -407,7 +355,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="/home/hpx/HPXLoco/engineai_legged_gym/resources/robots/livelybot_urdf/meshes/l_ankle_roll_link.STL" />
+				<mesh filename="package://pai_2_12_240723/meshes/l_ankle_roll_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
@@ -416,7 +364,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<collision>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="/home/hpx/HPXLoco/engineai_legged_gym/resources/robots/livelybot_urdf/meshes/l_ankle_roll_link.STL" />
+				<mesh filename="package://pai_2_12_240723/meshes/l_ankle_roll_link.STL" />
 			</geometry>
 		</collision>
 	</link>

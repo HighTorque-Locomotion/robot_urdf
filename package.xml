@@ -1,10 +1,10 @@
 <package format="2">
-  <name>pai_2_12_240723</name>
+  <name>livelybot_urdf</name>
   <version>1.0.0</version>
   <description>
-    <p>URDF Description package for pai_2_12_240723</p>
+    <p>URDF Description package for livelybot_urdf</p>
     <p>This package contains configuration data, 3D models and launch files
-for pai_2_12_240723 robot</p>
+for livelybot_urdf robot</p>
   </description>
   <author>TODO</author>
   <maintainer email="TODO@email.com" />

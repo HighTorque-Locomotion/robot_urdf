@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<robot name="hi_1_18_240815">
+<robot name="hi_1_21_240815">
 	<transmission name="l_hip_yaw_tran">
         <type>transmission_interface/SimpleTransmission</type>
         <joint name="l_hip_yaw_joint">
@@ -137,7 +137,7 @@
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://hi_1_18_240815/meshes/base_link.STL" />
+				<mesh filename="package://hi_1_21_240815/meshes/base_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
@@ -146,7 +146,7 @@
 		<collision>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://hi_1_18_240815/meshes/base_link.STL" />
+				<mesh filename="package://hi_1_21_240815/meshes/base_link.STL" />
 			</geometry>
 		</collision>
 	</link>
@@ -160,7 +160,7 @@
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://hi_1_18_240815/meshes/r_hip_yaw_link.STL" />
+				<mesh filename="package://hi_1_21_240815/meshes/r_hip_yaw_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
@@ -189,7 +189,7 @@
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://hi_1_18_240815/meshes/r_hip_roll_link.STL" />
+				<mesh filename="package://hi_1_21_240815/meshes/r_hip_roll_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
@@ -218,7 +218,7 @@
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://hi_1_18_240815/meshes/r_thigh_link.STL" />
+				<mesh filename="package://hi_1_21_240815/meshes/r_thigh_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
@@ -247,7 +247,7 @@
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://hi_1_18_240815/meshes/r_calf_link.STL" />
+				<mesh filename="package://hi_1_21_240815/meshes/r_calf_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
@@ -276,7 +276,7 @@
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://hi_1_18_240815/meshes/r_ankle_pitch_link.STL" />
+				<mesh filename="package://hi_1_21_240815/meshes/r_ankle_pitch_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.650980392156863 0.619607843137255 0.588235294117647 1" />
@@ -285,7 +285,7 @@
 		<collision>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://hi_1_18_240815/meshes/r_ankle_pitch_link.STL" />
+				<mesh filename="package://hi_1_21_240815/meshes/r_ankle_pitch_link.STL" />
 			</geometry>
 		</collision>
 	</link>
@@ -305,7 +305,7 @@
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://hi_1_18_240815/meshes/r_ankle_roll_link.STL" />
+				<mesh filename="package://hi_1_21_240815/meshes/r_ankle_roll_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
@@ -314,7 +314,7 @@
 		<collision>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://hi_1_18_240815/meshes/r_ankle_roll_link.STL" />
+				<mesh filename="package://hi_1_21_240815/meshes/r_ankle_roll_link.STL" />
 			</geometry>
 		</collision>
 	</link>
@@ -335,7 +335,7 @@
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://hi_1_18_240815/meshes/l_hip_yaw_link.STL" />
+				<mesh filename="package://hi_1_21_240815/meshes/l_hip_yaw_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
@@ -364,7 +364,7 @@
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://hi_1_18_240815/meshes/l_hip_roll_link.STL" />
+				<mesh filename="package://hi_1_21_240815/meshes/l_hip_roll_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="1 1 1 1" />
@@ -393,7 +393,7 @@
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://hi_1_18_240815/meshes/l_thigh_link.STL" />
+				<mesh filename="package://hi_1_21_240815/meshes/l_thigh_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
@@ -422,7 +422,7 @@
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://hi_1_18_240815/meshes/l_calf_link.STL" />
+				<mesh filename="package://hi_1_21_240815/meshes/l_calf_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
@@ -451,7 +451,7 @@
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://hi_1_18_240815/meshes/l_ankle_pitch_link.STL" />
+				<mesh filename="package://hi_1_21_240815/meshes/l_ankle_pitch_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
@@ -460,7 +460,7 @@
 		<collision>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://hi_1_18_240815/meshes/l_ankle_pitch_link.STL" />
+				<mesh filename="package://hi_1_21_240815/meshes/l_ankle_pitch_link.STL" />
 			</geometry>
 		</collision>
 	</link>
@@ -480,7 +480,7 @@
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://hi_1_18_240815/meshes/l_ankle_roll_link.STL" />
+				<mesh filename="package://hi_1_21_240815/meshes/l_ankle_roll_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
@@ -489,7 +489,7 @@
 		<collision>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://hi_1_18_240815/meshes/l_ankle_roll_link.STL" />
+				<mesh filename="package://hi_1_21_240815/meshes/l_ankle_roll_link.STL" />
 			</geometry>
 		</collision>
 	</link>
@@ -510,7 +510,7 @@
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://hi_1_18_240815/meshes/waist_yaw_link.STL" />
+				<mesh filename="package://hi_1_21_240815/meshes/waist_yaw_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="1 1 1 1" />
@@ -519,7 +519,7 @@
 		<collision>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://hi_1_18_240815/meshes/waist_yaw_link.STL" />
+				<mesh filename="package://hi_1_21_240815/meshes/waist_yaw_link.STL" />
 			</geometry>
 		</collision>
 	</link>
@@ -540,7 +540,7 @@
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://hi_1_18_240815/meshes/r_shoulder_pitch_link.STL" />
+				<mesh filename="package://hi_1_21_240815/meshes/r_shoulder_pitch_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
@@ -549,7 +549,7 @@
 		<collision>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://hi_1_18_240815/meshes/r_shoulder_pitch_link.STL" />
+				<mesh filename="package://hi_1_21_240815/meshes/r_shoulder_pitch_link.STL" />
 			</geometry>
 		</collision>
 	</link>
@@ -569,7 +569,7 @@
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://hi_1_18_240815/meshes/r_shoulder_roll_link.STL" />
+				<mesh filename="package://hi_1_21_240815/meshes/r_shoulder_roll_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
@@ -578,7 +578,7 @@
 		<collision>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://hi_1_18_240815/meshes/r_shoulder_roll_link.STL" />
+				<mesh filename="package://hi_1_21_240815/meshes/r_shoulder_roll_link.STL" />
 			</geometry>
 		</collision>
 	</link>
@@ -598,7 +598,7 @@
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://hi_1_18_240815/meshes/r_elbow_yaw_link.STL" />
+				<mesh filename="package://hi_1_21_240815/meshes/r_elbow_yaw_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
@@ -607,7 +607,7 @@
 		<collision>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://hi_1_18_240815/meshes/r_elbow_yaw_link.STL" />
+				<mesh filename="package://hi_1_21_240815/meshes/r_elbow_yaw_link.STL" />
 			</geometry>
 		</collision>
 	</link>
@@ -627,7 +627,7 @@
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://hi_1_18_240815/meshes/r_elbow_roll_link.STL" />
+				<mesh filename="package://hi_1_21_240815/meshes/r_elbow_roll_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
@@ -636,7 +636,7 @@
 		<collision>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://hi_1_18_240815/meshes/r_elbow_roll_link.STL" />
+				<mesh filename="package://hi_1_21_240815/meshes/r_elbow_roll_link.STL" />
 			</geometry>
 		</collision>
 	</link>
@@ -657,7 +657,7 @@
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://hi_1_18_240815/meshes/l_shoulder_pitch_link.STL" />
+				<mesh filename="package://hi_1_21_240815/meshes/l_shoulder_pitch_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
@@ -666,7 +666,7 @@
 		<collision>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://hi_1_18_240815/meshes/l_shoulder_pitch_link.STL" />
+				<mesh filename="package://hi_1_21_240815/meshes/l_shoulder_pitch_link.STL" />
 			</geometry>
 		</collision>
 	</link>
@@ -686,7 +686,7 @@
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://hi_1_18_240815/meshes/l_shoulder_roll_link.STL" />
+				<mesh filename="package://hi_1_21_240815/meshes/l_shoulder_roll_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
@@ -695,7 +695,7 @@
 		<collision>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://hi_1_18_240815/meshes/l_shoulder_roll_link.STL" />
+				<mesh filename="package://hi_1_21_240815/meshes/l_shoulder_roll_link.STL" />
 			</geometry>
 		</collision>
 	</link>
@@ -715,7 +715,7 @@
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://hi_1_18_240815/meshes/l_elbow_yaw_link.STL" />
+				<mesh filename="package://hi_1_21_240815/meshes/l_elbow_yaw_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
@@ -724,7 +724,7 @@
 		<collision>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://hi_1_18_240815/meshes/l_elbow_yaw_link.STL" />
+				<mesh filename="package://hi_1_21_240815/meshes/l_elbow_yaw_link.STL" />
 			</geometry>
 		</collision>
 	</link>
@@ -744,7 +744,7 @@
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://hi_1_18_240815/meshes/l_elbow_roll_link.STL" />
+				<mesh filename="package://hi_1_21_240815/meshes/l_elbow_roll_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
@@ -753,7 +753,7 @@
 		<collision>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://hi_1_18_240815/meshes/l_elbow_roll_link.STL" />
+				<mesh filename="package://hi_1_21_240815/meshes/l_elbow_roll_link.STL" />
 			</geometry>
 		</collision>
 	</link>

@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8.3)
 
-project(hi_1_18_240815)
+project(hi_1_21_240815)
 
 find_package(catkin REQUIRED)
 

@@ -1,19 +1,153 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com)
-Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
-For more information, please see http://wiki.ros.org/sw_urdf_exporter
--->
 <robot name="pai_cl_12_240823">
+	<transmission name="l_hip_pitch_tran">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="l_hip_pitch_joint">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="l_hip_pitch_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="l_hip_roll_tran">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="l_hip_roll_joint">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="l_hip_roll_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="l_thigh_tran">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="l_thigh_joint">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="l_thigh_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="l_calf_tran">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="l_calf_joint">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="l_calf_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="l_ankle_pitch_tran">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="l_ankle_pitch_joint">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="l_ankle_pitch_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+	<transmission name="l_ankle_roll_tran">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="l_ankle_roll_joint">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="l_ankle_roll_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="r_hip_pitch_tran">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="r_hip_pitch_joint">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="r_hip_pitch_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="r_hip_roll_tran">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="r_hip_roll_joint">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="r_hip_roll_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="r_thigh_tran">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="r_thigh_joint">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="r_thigh_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="r_calf_tran">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="r_calf_joint">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="r_calf_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="r_ankle_pitch_tran">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="r_ankle_pitch_joint">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="r_ankle_pitch_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+	<transmission name="r_ankle_roll_tran">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="r_ankle_roll_joint">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="r_ankle_roll_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+
+	<gazebo>
+        <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+            <robotNamespace>/pai_cl_12_240823</robotNamespace>
+            <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+        </plugin>
+    </gazebo>
+
 	<link name="base_link">
+		
+	</link>
+	<joint name="base_joint" type="fixed">
+		<origin xyz="0.0 0.0 0.0" rpy="0.0 0.55 0.0"/>
+		<parent link="base_link"/>
+		<child link="base_trunk"/>
+		<axis xyz="0.0 0.0 0.0"/>
+		<limit lower="0.0" upper="0.0" effort="0.0" velocity="0.0"/>
+	</joint>
+	<link name="base_trunk">
 		<inertial>
 			<origin xyz="0.00080912 -8.753E-05 0.03920549" rpy="0 0 0" />
 			<mass value="1.82" />
 			<inertia ixx="0.00829787" ixy="-1.181E-05" ixz="-0.00019642" iyy="0.00916809" iyz="1.354E-05" izz="0.00411404" />
 		</inertial>
 		<visual>
-			<origin xyz="0 0 0" rpy="0 0 0" />
+			<origin xyz="0 0 0.0" rpy="0 0 0" />
 			<geometry>
+				<!-- <box size="0.1 0.1 0.1" /> -->
 				<mesh filename="package://pai_cl_12_240823/meshes/base_link.STL" />
 			</geometry>
 			<material name="">
@@ -21,12 +155,14 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 			</material>
 		</visual>
 		<collision>
-			<origin xyz="0 0 0" rpy="0 0 0" />
+			<origin xyz="0 0 0.08" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://pai_cl_12_240823/meshes/base_link.STL" />
+				<box size="0.1 0.1 0.1" />
+				<!-- <mesh filename="package://pai_cl_12_240823/meshes/base_link.STL" /> -->
 			</geometry>
 		</collision>
 	</link>
+
 	<link name="r_hip_pitch_link">
 		<inertial>
 			<origin xyz="0.0010765 -0.030923 -0.00028479" rpy="0 0 0" />
@@ -36,6 +172,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
+				<!-- <box size="0.001 0.001 0.001" /> -->
 				<mesh filename="package://pai_cl_12_240823/meshes/r_hip_pitch_link.STL" />
 			</geometry>
 			<material name="">
@@ -45,16 +182,17 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<collision>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://pai_cl_12_240823/meshes/r_hip_pitch_link.STL" />
+				<box size="0.001 0.001 0.001" />
+				<!-- <mesh filename="package://pai_cl_12_240823/meshes/r_hip_pitch_link.STL" /> -->
 			</geometry>
 		</collision>
 	</link>
 	<joint name="r_hip_pitch_joint" type="revolute">
 		<origin xyz="-0.0028186 -0.0482 -0.031" rpy="0 0 0" />
-		<parent link="base_link" />
+		<parent link="base_trunk" />
 		<child link="r_hip_pitch_link" />
 		<axis xyz="0 1 0" />
-		<limit lower="-3.14" upper="3.14" effort="21" velocity="21" />
+		<limit lower="-1.5" upper="1.5" effort="21" velocity="21" />
 	</joint>
 	<link name="r_hip_roll_link">
 		<inertial>
@@ -65,6 +203,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
+				<!-- <box size="0.001 0.001 0.001" /> -->
 				<mesh filename="package://pai_cl_12_240823/meshes/r_hip_roll_link.STL" />
 			</geometry>
 			<material name="">
@@ -74,7 +213,8 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<collision>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://pai_cl_12_240823/meshes/r_hip_roll_link.STL" />
+				<!-- <mesh filename="package://pai_cl_12_240823/meshes/r_hip_roll_link.STL" /> -->
+				<box size="0.001 0.001 0.001" />
 			</geometry>
 		</collision>
 	</link>
@@ -83,7 +223,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<parent link="r_hip_pitch_link" />
 		<child link="r_hip_roll_link" />
 		<axis xyz="1 0 0" />
-		<limit lower="-3.14" upper="3.14" effort="21" velocity="21" />
+		<limit lower="-0.5" upper="0.12" effort="21" velocity="21" />
 	</joint>
 	<link name="r_thigh_link">
 		<inertial>
@@ -94,6 +234,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
+				<!-- <box size="0.001 0.001 0.001" /> -->
 				<mesh filename="package://pai_cl_12_240823/meshes/r_thigh_link.STL" />
 			</geometry>
 			<material name="">
@@ -103,7 +244,8 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<collision>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://pai_cl_12_240823/meshes/r_thigh_link.STL" />
+				<box size="0.001 0.001 0.001" />
+				<!-- <mesh filename="package://pai_cl_12_240823/meshes/r_thigh_link.STL" /> -->
 			</geometry>
 		</collision>
 	</link>
@@ -112,7 +254,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<parent link="r_hip_roll_link" />
 		<child link="r_thigh_link" />
 		<axis xyz="0 0 1" />
-		<limit lower="-3.14" upper="3.14" effort="21" velocity="21" />
+		<limit lower="-0.6" upper="0.3" effort="21" velocity="21" />
 	</joint>
 	<link name="r_calf_link">
 		<!-- <inertial>
@@ -128,6 +270,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
+				<!-- <box size="0.001 0.001 0.001" /> -->
 				<mesh filename="package://pai_cl_12_240823/meshes/r_calf_link.STL" />
 			</geometry>
 			<material name="">
@@ -137,7 +280,8 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<collision>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://pai_cl_12_240823/meshes/r_calf_link.STL" />
+				<box size="0.001 0.001 0.001" />
+				<!-- <mesh filename="package://pai_cl_12_240823/meshes/r_calf_link.STL" /> -->
 			</geometry>
 		</collision>
 	</link>
@@ -146,7 +290,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<parent link="r_thigh_link" />
 		<child link="r_calf_link" />
 		<axis xyz="0 1 0" />
-		<limit lower="-3.14" upper="3.14" effort="21" velocity="21" />
+		<limit lower="0.0" upper="2.0" effort="21" velocity="21" />
 	</joint>
 	<link name="r_ankle_pitch_link">
 		<inertial>
@@ -157,6 +301,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
+				<!-- <box size="0.001 0.001 0.001" /> -->
 				<mesh filename="package://pai_cl_12_240823/meshes/r_ankle_pitch_link.STL" />
 			</geometry>
 			<material name="">
@@ -166,7 +311,8 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<collision>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://pai_cl_12_240823/meshes/r_ankle_pitch_link.STL" />
+				<box size="0.001 0.001 0.001" />
+				<!-- <mesh filename="package://pai_cl_12_240823/meshes/r_ankle_pitch_link.STL" /> -->
 			</geometry>
 		</collision>
 	</link>
@@ -175,7 +321,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<parent link="r_calf_link" />
 		<child link="r_ankle_pitch_link" />
 		<axis xyz="0 1 0" />
-		<limit lower="-3.14" upper="3.14" effort="21" velocity="21" />
+		<limit lower="-0.5" upper="0.7" effort="21" velocity="21" />
 	</joint>
 	<link name="r_ankle_roll_link">
 		<inertial>
@@ -204,7 +350,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<parent link="r_ankle_pitch_link" />
 		<child link="r_ankle_roll_link" />
 		<axis xyz="1 0 0" />
-		<limit lower="-3.14" upper="3.14" effort="21" velocity="21" />
+		<limit lower="-0.3" upper="0.8" effort="21" velocity="21" />
 	</joint>
 	<link name="l_hip_pitch_link">
 		<inertial>
@@ -224,16 +370,17 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<collision>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://pai_cl_12_240823/meshes/l_hip_pitch_link.STL" />
+				<box size="0.001 0.001 0.001" />
+				<!-- <mesh filename="package://pai_cl_12_240823/meshes/l_hip_pitch_link.STL" /> -->
 			</geometry>
 		</collision>
 	</link>
 	<joint name="l_hip_pitch_joint" type="revolute">
 		<origin xyz="-0.0028186 0.0482 -0.031" rpy="0 0 0" />
-		<parent link="base_link" />
+		<parent link="base_trunk" />
 		<child link="l_hip_pitch_link" />
 		<axis xyz="0 1 0" />
-		<limit lower="-3.14" upper="3.14" effort="21" velocity="21" />
+		<limit lower="-1.5" upper="1.5" effort="21" velocity="21" />
 	</joint>
 	<link name="l_hip_roll_link">
 		<inertial>
@@ -253,7 +400,8 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<collision>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://pai_cl_12_240823/meshes/l_hip_roll_link.STL" />
+				<box size="0.001 0.001 0.001" />
+				<!-- <mesh filename="package://pai_cl_12_240823/meshes/l_hip_roll_link.STL" /> -->
 			</geometry>
 		</collision>
 	</link>
@@ -262,7 +410,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<parent link="l_hip_pitch_link" />
 		<child link="l_hip_roll_link" />
 		<axis xyz="1 0 0" />
-		<limit lower="-3.14" upper="3.14" effort="21" velocity="21" />
+		<limit lower="-0.12" upper="0.5" effort="21" velocity="21" />
 	</joint>
 	<link name="l_thigh_link">
 		<inertial>
@@ -282,7 +430,8 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<collision>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://pai_cl_12_240823/meshes/l_thigh_link.STL" />
+				<box size="0.001 0.001 0.001" />
+				<!-- <mesh filename="package://pai_cl_12_240823/meshes/l_thigh_link.STL" /> -->
 			</geometry>
 		</collision>
 	</link>
@@ -291,7 +440,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<parent link="l_hip_roll_link" />
 		<child link="l_thigh_link" />
 		<axis xyz="0 0 1" />
-		<limit lower="-3.14" upper="3.14" effort="21" velocity="21" />
+		<limit lower="-0.3" upper="0.6" effort="21" velocity="21" />
 	</joint>
 	<link name="l_calf_link">
 		<inertial>
@@ -311,7 +460,8 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<collision>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://pai_cl_12_240823/meshes/l_calf_link.STL" />
+				<box size="0.001 0.001 0.001" />
+				<!-- <mesh filename="package://pai_cl_12_240823/meshes/l_calf_link.STL" /> -->
 			</geometry>
 		</collision>
 	</link>
@@ -320,7 +470,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<parent link="l_thigh_link" />
 		<child link="l_calf_link" />
 		<axis xyz="0 1 0" />
-		<limit lower="-3.14" upper="3.14" effort="21" velocity="21" />
+		<limit lower="0.0" upper="2.0" effort="21" velocity="21" />
 	</joint>
 	<link name="l_ankle_pitch_link">
 		<inertial>
@@ -340,7 +490,8 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<collision>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="package://pai_cl_12_240823/meshes/l_ankle_pitch_link.STL" />
+				<box size="0.001 0.001 0.001" />
+				<!-- <mesh filename="package://pai_cl_12_240823/meshes/l_ankle_pitch_link.STL" /> -->
 			</geometry>
 		</collision>
 	</link>
@@ -349,7 +500,7 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<parent link="l_calf_link" />
 		<child link="l_ankle_pitch_link" />
 		<axis xyz="0 1 0" />
-		<limit lower="-3.14" upper="3.14" effort="21" velocity="21" />
+		<limit lower="-0.5" upper="0.7" effort="21" velocity="21" />
 	</joint>
 	<link name="l_ankle_roll_link">
 		<inertial>
@@ -378,6 +529,6 @@ For more information, please see http://wiki.ros.org/sw_urdf_exporter
 		<parent link="l_ankle_pitch_link" />
 		<child link="l_ankle_roll_link" />
 		<axis xyz="1 0 0" />
-		<limit lower="-3.14" upper="3.14" effort="21" velocity="21" />
+		<limit lower="-0.8" upper="0.3" effort="21" velocity="21" />
 	</joint>
 </robot>

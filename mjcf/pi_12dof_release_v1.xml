@@ -1,4 +1,4 @@
-  <mujoco model="clpai_12dof_0905">
+  <mujoco model="pi_12dof_release_v1">
   <compiler angle="radian" meshdir="../meshes/" eulerseq="zyx"/>
     <option timestep='0.001' iterations='50' solver='PGS' gravity='0 0 -9.81'>
     <flag sensornoise="enable" frictionloss="enable"/>

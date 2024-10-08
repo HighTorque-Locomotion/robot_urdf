@@ -1,4 +1,6 @@
-sim2real config：
+## Release version V1.0 —— Pi(2024.10.8)
+
+### sim2real config：
 
 ```yaml
 urdf_dof_pos_offset: [-0.25,0,0,0.65,-0.4,0,
@@ -18,7 +20,7 @@ joint_controller_names: [
     "r_ankle_roll_joint"]
 ```
 
-rl_config：
+### rl_config：
 
 ```python
 foot_name = "ankle_roll"

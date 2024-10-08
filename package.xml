@@ -1,10 +1,10 @@
 <package format="2">
-  <name>pai_12dof_0911</name>
+  <name>pi_parallel_12dof_release_v1</name>
   <version>1.0.0</version>
   <description>
-    <p>URDF Description package for pai_12dof_0911</p>
+    <p>URDF Description package for pi_parallel_12dof_release_v1</p>
     <p>This package contains configuration data, 3D models and launch files
-for pai_12dof_0911 robot</p>
+for pi_parallel_12dof_release_v1 robot</p>
   </description>
   <author>TODO</author>
   <maintainer email="TODO@email.com" />

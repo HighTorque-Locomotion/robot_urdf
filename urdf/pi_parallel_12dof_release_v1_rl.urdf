@@ -4,7 +4,7 @@ This URDF was automatically created by SolidWorks to URDF Exporter! Originally c
 Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
 For more information, please see http://wiki.ros.org/sw_urdf_exporter
 -->
-<robot name="pai_12dof_0911">
+<robot name="pi_parallel_12dof_release_v1">
 	<mujoco>
 		<compiler meshdir="../meshes/" balanceinertia="true" discardvisual="false" />
 	</mujoco>

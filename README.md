@@ -1,4 +1,6 @@
-sim2real config：
+## Release version V1.0 —— Pi parallel(2024.10.8)
+
+## sim2real config：
 
 ```yaml
 urdf_dof_pos_offset: [0,0,-0.35,0.7,-0.35,0,
@@ -18,7 +20,7 @@ joint_controller_names: [
     "r_ankle_roll_joint"]
 ```
 
-rl_config：
+## **rl_config：**
 
 ```python
 foot_name = "ankle_roll"
@@ -40,9 +42,7 @@ default_joint_angles = {  # = target angles [rad] when action = 0.0
 stiffness = {'hip_yaw_joint': 80.0, 'hip_roll_joint': 80.0, 'thigh_joint': 80.0,
              'calf_joint': 80.0, 'ankle_pitch_joint': 80, 'ankle_roll_joint': 80,}
 damping = {'hip_yaw_joint': 0.25, 'hip_roll_joint': 0.25, 'thigh_joint': 0.25, 
-	   'calf_joint': 0.25, 'ankle_pitch_joint': 0.25, 'ankle_roll_joint': 0.25
+	   'calf_joint': 0.25, 'ankle_pitch_joint': 0.25, 'ankle_roll_joint': 0.25}
 ```
 
-![1726045422951](image/README/1726045422951.png)
-
-![1726045491166](image/README/1726045491166.png)
+![1728368441988](image/README/1728368441988.png)![1728368452918](image/README/1728368452918.png)

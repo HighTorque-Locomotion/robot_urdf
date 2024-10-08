@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8.3)
 
-project(pai_12dof_0911)
+project(pi_parallel_12dof_release_v1)
 
 find_package(catkin REQUIRED)
 

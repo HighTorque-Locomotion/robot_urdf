@@ -10,7 +10,7 @@
     name="spawn_model"
     pkg="gazebo_ros"
     type="spawn_model"
-    args="-file $(find pai_12dof_0911)/urdf/pai_12dof_0911.urdf -urdf -model pai_12dof_0911"
+    args="-file $(find pi_parallel_12dof_release_v1)/urdf/pi_parallel_12dof_release_v1.urdf -urdf -model pi_parallel_12dof_release_v1"
     output="screen" />
   <node
     name="fake_joint_calibration"

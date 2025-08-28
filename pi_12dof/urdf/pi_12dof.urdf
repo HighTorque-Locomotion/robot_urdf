@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <robot name="pi_description">
 	<mujoco>
-		<compiler meshdir="../meshes/" balanceinertia="true" discardvisual="false" />
+		<compiler meshdir="../meshes/" balanceinertia="true" discardvisual="false" fusestatic="false" />
 	</mujoco>
 	<link name="base_link">
 		<inertial>
@@ -13,7 +13,7 @@
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
 				<!-- <box size="0.1 0.1 0.1" /> -->
-				<mesh filename="../meshes/baselink_1.STL" />
+				<mesh filename="package://pi_12dof/meshes/baselink_1.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="1 1 1 1" />
@@ -23,7 +23,7 @@
 			<origin xyz="0 0 0.08" rpy="0 0 0" />
 			<geometry>
 				<box size="0.17 0.15 0.15" />
-				<!-- <mesh filename="../meshes/base_link.STL" /> -->
+				<!-- <mesh filename="package://pi_12dof../meshes/base_link.STL" /> -->
 			</geometry>
 		</collision>
 	</link>
@@ -37,7 +37,7 @@
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="../meshes/r_hip_pitch_link.STL" />
+				<mesh filename="package://pi_12dof/meshes/r_hip_pitch_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.75294 0.75294 0.75294 1" />
@@ -47,12 +47,12 @@
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
 				<box size="0.001 0.001 0.001" />
-				<!-- <mesh filename="../meshes/r_hip_pitch_link.STL" /> -->
+				<!-- <mesh filename="package://pi_12dof../meshes/r_hip_pitch_link.STL" /> -->
 			</geometry>
 		</collision>
 	</link>
 	<joint name="r_hip_pitch_joint" type="revolute">
-		<origin xyz="-5.1979E-05 -0.0233 -0.033" rpy="0 -0.25 0" />
+		<origin xyz="-5.1979E-05 -0.0233 -0.033" rpy="0 0 0" />
 		<parent link="base_link" />
 		<child link="r_hip_pitch_link" />
 		<axis xyz="0 1 0" />
@@ -67,7 +67,7 @@
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="../meshes/r_hip_roll_link.STL" />
+				<mesh filename="package://pi_12dof/meshes/r_hip_roll_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.75294 0.75294 0.75294 1" />
@@ -77,7 +77,7 @@
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
 				<box size="0.001 0.001 0.001" />
-				<!-- <mesh filename="../meshes/r_hip_roll_link.STL" /> -->
+				<!-- <mesh filename="package://pi_12dof../meshes/r_hip_roll_link.STL" /> -->
 			</geometry>
 		</collision>
 	</link>
@@ -97,7 +97,7 @@
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="../meshes/r_thigh_link.STL" />
+				<mesh filename="package://pi_12dof/meshes/r_thigh_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.75294 0.75294 0.75294 1" />
@@ -107,7 +107,7 @@
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
 				<box size="0.001 0.001 0.001" />
-				<!-- <mesh filename="../meshes/r_thigh_link.STL" /> -->
+				<!-- <mesh filename="package://pi_12dof../meshes/r_thigh_link.STL" /> -->
 			</geometry>
 		</collision>
 	</link>
@@ -127,7 +127,7 @@
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="../meshes/r_calf_link.STL" />
+				<mesh filename="package://pi_12dof/meshes/r_calf_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.75294 0.75294 0.75294 1" />
@@ -137,12 +137,12 @@
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
 				<box size="0.001 0.001 0.001" />
-				<!-- <mesh filename="../meshes/r_calf_link.STL" /> -->
+				<!-- <mesh filename="package://pi_12dof../meshes/r_calf_link.STL" /> -->
 			</geometry>
 		</collision>
 	</link>
 	<joint name="r_calf_joint" type="revolute">
-		<origin xyz="0 -0.0027 -0.07025" rpy="0 0.65 0" />
+		<origin xyz="0 -0.0027 -0.07025" rpy="0 0 0" />
 		<parent link="r_thigh_link" />
 		<child link="r_calf_link" />
 		<axis xyz="0 1 0" />
@@ -157,7 +157,7 @@
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="../meshes/r_ankle_pitch_link.STL" />
+				<mesh filename="package://pi_12dof/meshes/r_ankle_pitch_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.75294 0.75294 0.75294 1" />
@@ -167,12 +167,12 @@
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
 				<box size="0.07 0.065 0.045" />
-				<!-- <mesh filename="../meshes/r_ankle_pitch_link.STL" /> -->
+				<!-- <mesh filename="package://pi_12dof../meshes/r_ankle_pitch_link.STL" /> -->
 			</geometry>
 		</collision>
 	</link>
 	<joint name="r_ankle_pitch_joint" type="revolute">
-		<origin xyz="0 0 -0.14" rpy="0 -0.4 0" />
+		<origin xyz="0 0 -0.14" rpy="0 0 0" />
 		<parent link="r_calf_link" />
 		<child link="r_ankle_pitch_link" />
 		<axis xyz="0 1 0" />
@@ -187,7 +187,7 @@
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="../meshes/r_ankle_roll_link.STL" />
+				<mesh filename="package://pi_12dof/meshes/r_ankle_roll_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.75294 0.75294 0.75294 1" />
@@ -197,7 +197,7 @@
 			<origin xyz="0.036 -0.036 -0.0479" rpy="0 0 1.5708" />
 			<geometry>
 				<!-- <box size="0.17 0.07 0.008" /> -->
-				<mesh filename="../meshes/foot.STL" scale="0.001 0.001 0.001"/>
+				<mesh filename="package://pi_12dof/meshes/foot.STL" scale="0.001 0.001 0.001"/>
 			</geometry>
 		</collision>
 	</link>
@@ -218,7 +218,7 @@
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="../meshes/l_hip_pitch_link.STL" />
+				<mesh filename="package://pi_12dof/meshes/l_hip_pitch_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.75294 0.75294 0.75294 1" />
@@ -228,12 +228,12 @@
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
 				<box size="0.001 0.001 0.001" />
-				<!-- <mesh filename="../meshes/l_hip_pitch_link.STL" /> -->
+				<!-- <mesh filename="package://pi_12dof../meshes/l_hip_pitch_link.STL" /> -->
 			</geometry>
 		</collision>
 	</link>
 	<joint name="l_hip_pitch_joint" type="revolute">
-		<origin xyz="-5.1979E-05 0.0233 -0.033" rpy="0 -0.25 0" />
+		<origin xyz="-5.1979E-05 0.0233 -0.033" rpy="0 0 0" />
 		<parent link="base_link" />
 		<child link="l_hip_pitch_link" />
 		<axis xyz="0 1 0" />
@@ -248,7 +248,7 @@
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="../meshes/l_hip_roll_link.STL" />
+				<mesh filename="package://pi_12dof/meshes/l_hip_roll_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.75294 0.75294 0.75294 1" />
@@ -258,7 +258,7 @@
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
 				<box size="0.001 0.001 0.001" />
-				<!-- <mesh filename="../meshes/l_hip_roll_link.STL" /> -->
+				<!-- <mesh filename="package://pi_12dof/meshes/l_hip_roll_link.STL" /> -->
 			</geometry>
 		</collision>
 	</link>
@@ -278,7 +278,7 @@
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="../meshes/l_thigh_link.STL" />
+				<mesh filename="package://pi_12dof/meshes/l_thigh_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.75294 0.75294 0.75294 1" />
@@ -288,7 +288,7 @@
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
 				<box size="0.001 0.001 0.001" />
-				<!-- <mesh filename="../meshes/l_thigh_link.STL" /> -->
+				<!-- <mesh filename="package://pi_12dof../meshes/l_thigh_link.STL" /> -->
 			</geometry>
 		</collision>
 	</link>
@@ -308,7 +308,7 @@
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="../meshes/l_calf_link.STL" />
+				<mesh filename="package://pi_12dof/meshes/l_calf_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.75294 0.75294 0.75294 1" />
@@ -318,12 +318,12 @@
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
 				<box size="0.001 0.001 0.001" />
-				<!-- <mesh filename="../meshes/l_calf_link.STL" /> -->
+				<!-- <mesh filename="package://pi_12dof../meshes/l_calf_link.STL" /> -->
 			</geometry>
 		</collision>
 	</link>
 	<joint name="l_calf_joint" type="revolute">
-		<origin xyz="0 0 -0.07025" rpy="0 0.65 0" />
+		<origin xyz="0 0 -0.07025" rpy="0 0 0" />
 		<parent link="l_thigh_link" />
 		<child link="l_calf_link" />
 		<axis xyz="0 1 0" />
@@ -338,7 +338,7 @@
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="../meshes/l_ankle_pitch_link.STL" />
+				<mesh filename="package://pi_12dof/meshes/l_ankle_pitch_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.75294 0.75294 0.75294 1" />
@@ -348,12 +348,12 @@
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
 				<box size="0.07 0.065 0.045" />
-				<!-- <mesh filename="../meshes/l_ankle_pitch_link.STL" /> -->
+				<!-- <mesh filename="package://pi_12dof../meshes/l_ankle_pitch_link.STL" /> -->
 			</geometry>
 		</collision>
 	</link>
 	<joint name="l_ankle_pitch_joint" type="revolute">
-		<origin xyz="0 0 -0.14" rpy="0 -0.4 0" />
+		<origin xyz="0 0 -0.14" rpy="0 0 0" />
 		<parent link="l_calf_link" />
 		<child link="l_ankle_pitch_link" />
 		<axis xyz="0 1 0" />
@@ -368,7 +368,7 @@
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
-				<mesh filename="../meshes/l_ankle_roll_link.STL" />
+				<mesh filename="package://pi_12dof/meshes/l_ankle_roll_link.STL" />
 			</geometry>
 			<material name="">
 				<color rgba="0.75294 0.75294 0.75294 1" />
@@ -378,7 +378,7 @@
 			<origin xyz="0.036 -0.036 -0.0479" rpy="0 0 1.5708" />
 			<geometry>
 				<!-- <box size="0.17 0.07 0.008" /> -->
-				<mesh filename="../meshes/foot.STL" scale="0.001 0.001 0.001"/>
+				<mesh filename="package://pi_12dof/meshes/foot.STL" scale="0.001 0.001 0.001"/>
 			</geometry>
 		</collision>
 	</link>

@@ -7,6 +7,13 @@
       <mujoco>                                                                                                                                          
         <compiler meshdir="package://hi_25dof/meshes/" balanceinertia="true" discardvisual="false" />                                                                 
       </mujoco> 
+  <!-- [CAUTION] uncomment when convert to mujoco -->
+  <link name="world"></link>
+  <joint name="floating_base_joint" type="floating">
+    <parent link="world" />
+    <child link="base_link" />
+  </joint>
+
   <link
     name="base_link">
     <inertial>
@@ -222,7 +229,7 @@
       velocity="5.55" />
   </joint>
   <link
-    name="l_hip_caif_Link">
+    name="l_hip_calf_Link">
     <inertial>
       <origin
         xyz="0.0010123 -0.0024674 -0.064494"
@@ -243,7 +250,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/l_hip_caif_Link.STL" />
+          filename="package://hi_25dof/meshes/l_hip_calf_Link.STL" />
       </geometry>
       <material
         name="">
@@ -257,12 +264,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/l_hip_caif_Link.STL" />
+          filename="package://hi_25dof/meshes/l_hip_calf_Link.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="l_hip_caif_joint"
+    name="l_hip_calf_joint"
     type="revolute">
     <origin
       xyz="0 0.00375 -0.097"
@@ -270,7 +277,7 @@
     <parent
       link="l_hip_thigh_Link" />
     <child
-      link="l_hip_caif_Link" />
+      link="l_hip_calf_Link" />
     <axis
       xyz="0 1 0" />
     <limit
@@ -326,7 +333,7 @@
       xyz="0 -0.00375 -0.19945"
       rpy="0 0 0" />
     <parent
-      link="l_hip_caif_Link" />
+      link="l_hip_calf_Link" />
     <child
       link="l_ankle_pitch_Link" />
     <axis
@@ -570,7 +577,7 @@
       velocity="5.55" />
   </joint>
   <link
-    name="r_hip_caif_Link">
+    name="r_hip_calf_Link">
     <inertial>
       <origin
         xyz="0.0010123 0.0024674 -0.064494"
@@ -591,7 +598,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/r_hip_caif_Link.STL" />
+          filename="package://hi_25dof/meshes/r_hip_calf_Link.STL" />
       </geometry>
       <material
         name="">
@@ -605,12 +612,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/r_hip_caif_Link.STL" />
+          filename="package://hi_25dof/meshes/r_hip_calf_Link.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="r_hip_caif_joint"
+    name="r_hip_calf_joint"
     type="revolute">
     <origin
       xyz="0 -0.00375 -0.097"
@@ -618,7 +625,7 @@
     <parent
       link="r_hip_thigh_Link" />
     <child
-      link="r_hip_caif_Link" />
+      link="r_hip_calf_Link" />
     <axis
       xyz="0 1 0" />
     <limit
@@ -674,7 +681,7 @@
       xyz="0 0.00375 -0.19945"
       rpy="0 0 0" />
     <parent
-      link="r_hip_caif_Link" />
+      link="r_hip_calf_Link" />
     <child
       link="r_ankle_pitch_Link" />
     <axis

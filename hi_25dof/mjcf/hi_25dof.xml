@@ -105,7 +105,7 @@
                   <inertial pos="0.017291 -0.00079987 -0.030725" quat="0.0717589 0.724448 0.0777767 0.681158" mass="0.59911" diaginertia="0.00144003 0.00137984 0.000239531"/>
                   <joint name="r_ankle_roll_joint" pos="0 0 0" axis="1 0 0" range="-0.37525 0.37525" actuatorfrcrange="-14.4 14.4"/>
                   <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.3098 1 0.15294 1" mesh="r_ankle_roll_Link"/>
-                  <geom type="mesh" rgba="0.3098 1 0.15294 1" mesh="r_ankle_roll_Link"/>
+                  <geom type="mesh" rgba="0.89804 0.91765 0.92941 1" mesh="r_ankle_roll_Link"/>
                 </body>
               </body>
             </body>

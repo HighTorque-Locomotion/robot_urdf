@@ -5,14 +5,14 @@
 <robot
   name="hi_25dof">
       <mujoco>                                                                                                                                          
-        <compiler meshdir="package://hi_25dof/meshes/" balanceinertia="true" discardvisual="false" />                                                                 
+        <compiler meshdir="../meshes/" balanceinertia="true" discardvisual="false" />                                                                 
       </mujoco> 
   <!-- [CAUTION] uncomment when convert to mujoco -->
-  <link name="world"></link>
+  <!-- <link name="world"></link>
   <joint name="floating_base_joint" type="floating">
     <parent link="world" />
     <child link="base_link" />
-  </joint>
+  </joint> -->
 
   <link
     name="base_link">
@@ -718,8 +718,8 @@
       </geometry>
       <material
         name="">
-        <color
-          rgba="0.3098 1 0.15294 1" />
+        <color   
+          rgba="0.89804 0.91765 0.92941 1" />
       </material>
     </visual>
     <collision>

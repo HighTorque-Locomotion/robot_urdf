@@ -1,5 +1,5 @@
-<mujoco model="hi_23dof scene">
-  <include file="hi_23dof.xml"/>
+<mujoco model="hi_25dof scene">
+  <include file="hi_25dof.xml"/>
 
   <statistic center="0 0 0.1" extent="0.8"/>
 

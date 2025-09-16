@@ -3,7 +3,7 @@
      Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
-  name="hi_25dof">
+  name="hi_23dof">
       <mujoco>                                                                                                                                          
         <compiler meshdir="../meshes/" balanceinertia="true" discardvisual="false" />                                                                 
       </mujoco> 
@@ -36,7 +36,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/base_link.STL" />
+          filename="package://hi_23dof/meshes/base_link.STL" />
       </geometry>
       <material
         name="">
@@ -50,7 +50,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/base_link.STL" />
+          filename="package://hi_23dof/meshes/base_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -76,7 +76,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/l_hip_pitch_link.STL" />
+          filename="package://hi_23dof/meshes/l_hip_pitch_link.STL" />
       </geometry>
       <material
         name="">
@@ -90,7 +90,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/l_hip_pitch_link.STL" />
+          filename="package://hi_23dof/meshes/l_hip_pitch_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -134,7 +134,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/l_hip_roll_Link.STL" />
+          filename="package://hi_23dof/meshes/l_hip_roll_Link.STL" />
       </geometry>
       <material
         name="">
@@ -148,7 +148,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/l_hip_roll_Link.STL" />
+          filename="package://hi_23dof/meshes/l_hip_roll_Link.STL" />
       </geometry>
     </collision>
   </link>
@@ -192,7 +192,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/l_hip_thigh_Link.STL" />
+          filename="package://hi_23dof/meshes/l_hip_thigh_Link.STL" />
       </geometry>
       <material
         name="">
@@ -206,7 +206,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/l_hip_thigh_Link.STL" />
+          filename="package://hi_23dof/meshes/l_hip_thigh_Link.STL" />
       </geometry>
     </collision>
   </link>
@@ -250,7 +250,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/l_hip_calf_Link.STL" />
+          filename="package://hi_23dof/meshes/l_hip_calf_Link.STL" />
       </geometry>
       <material
         name="">
@@ -264,7 +264,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/l_hip_calf_Link.STL" />
+          filename="package://hi_23dof/meshes/l_hip_calf_Link.STL" />
       </geometry>
     </collision>
   </link>
@@ -308,7 +308,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/l_ankle_pitch_Link.STL" />
+          filename="package://hi_23dof/meshes/l_ankle_pitch_Link.STL" />
       </geometry>
       <material
         name="">
@@ -322,7 +322,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/l_ankle_pitch_Link.STL" />
+          filename="package://hi_23dof/meshes/l_ankle_pitch_Link.STL" />
       </geometry>
     </collision>
   </link>
@@ -366,7 +366,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/l_ankle_roll_Link.STL" />
+          filename="package://hi_23dof/meshes/l_ankle_roll_Link.STL" />
       </geometry>
       <material
         name="">
@@ -380,7 +380,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/l_ankle_roll_Link.STL" />
+          filename="package://hi_23dof/meshes/l_ankle_roll_Link.STL" />
       </geometry>
     </collision>
   </link>
@@ -424,7 +424,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/r_hip_pitch_Link.STL" />
+          filename="package://hi_23dof/meshes/r_hip_pitch_Link.STL" />
       </geometry>
       <material
         name="">
@@ -438,7 +438,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/r_hip_pitch_Link.STL" />
+          filename="package://hi_23dof/meshes/r_hip_pitch_Link.STL" />
       </geometry>
     </collision>
   </link>
@@ -482,7 +482,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/r_hip_roll_Link.STL" />
+          filename="package://hi_23dof/meshes/r_hip_roll_Link.STL" />
       </geometry>
       <material
         name="">
@@ -496,7 +496,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/r_hip_roll_Link.STL" />
+          filename="package://hi_23dof/meshes/r_hip_roll_Link.STL" />
       </geometry>
     </collision>
   </link>
@@ -540,7 +540,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/r_hip_thigh_link.STL" />
+          filename="package://hi_23dof/meshes/r_hip_thigh_link.STL" />
       </geometry>
       <material
         name="">
@@ -554,7 +554,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/r_hip_thigh_link.STL" />
+          filename="package://hi_23dof/meshes/r_hip_thigh_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -598,7 +598,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/r_hip_calf_link.STL" />
+          filename="package://hi_23dof/meshes/r_hip_calf_link.STL" />
       </geometry>
       <material
         name="">
@@ -612,7 +612,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/r_hip_calf_link.STL" />
+          filename="package://hi_23dof/meshes/r_hip_calf_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -656,7 +656,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/r_ankle_pitch_link.STL" />
+          filename="package://hi_23dof/meshes/r_ankle_pitch_link.STL" />
       </geometry>
       <material
         name="">
@@ -670,7 +670,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/r_ankle_pitch_link.STL" />
+          filename="package://hi_23dof/meshes/r_ankle_pitch_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -714,7 +714,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/r_ankle_roll_link.STL" />
+          filename="package://hi_23dof/meshes/r_ankle_roll_link.STL" />
       </geometry>
       <material
         name="">
@@ -728,7 +728,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/r_ankle_roll_link.STL" />
+          filename="package://hi_23dof/meshes/r_ankle_roll_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -772,7 +772,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/waist_yaw_link.STL" />
+          filename="package://hi_23dof/meshes/waist_yaw_link.STL" />
       </geometry>
       <material
         name="">
@@ -786,7 +786,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/waist_yaw_link.STL" />
+          filename="package://hi_23dof/meshes/waist_yaw_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -830,7 +830,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/l_shoulder_pitch_link.STL" />
+          filename="package://hi_23dof/meshes/l_shoulder_pitch_link.STL" />
       </geometry>
       <material
         name="">
@@ -844,7 +844,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/l_shoulder_pitch_link.STL" />
+          filename="package://hi_23dof/meshes/l_shoulder_pitch_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -888,7 +888,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/l_shoulder_roll_link.STL" />
+          filename="package://hi_23dof/meshes/l_shoulder_roll_link.STL" />
       </geometry>
       <material
         name="">
@@ -902,7 +902,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/l_shoulder_roll_link.STL" />
+          filename="package://hi_23dof/meshes/l_shoulder_roll_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -946,7 +946,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/l_upper_arm_link.STL" />
+          filename="package://hi_23dof/meshes/l_upper_arm_link.STL" />
       </geometry>
       <material
         name="">
@@ -960,7 +960,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/l_upper_arm_link.STL" />
+          filename="package://hi_23dof/meshes/l_upper_arm_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -1004,7 +1004,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/l_elbow_link.STL" />
+          filename="package://hi_23dof/meshes/l_elbow_link.STL" />
       </geometry>
       <material
         name="">
@@ -1018,7 +1018,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/l_elbow_link.STL" />
+          filename="package://hi_23dof/meshes/l_elbow_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -1062,7 +1062,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/l_wrist_link.STL" />
+          filename="package://hi_23dof/meshes/l_wrist_link.STL" />
       </geometry>
       <material
         name="">
@@ -1076,7 +1076,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/l_wrist_link.STL" />
+          filename="package://hi_23dof/meshes/l_wrist_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -1120,7 +1120,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/r_shoulder_pitch_link.STL" />
+          filename="package://hi_23dof/meshes/r_shoulder_pitch_link.STL" />
       </geometry>
       <material
         name="">
@@ -1134,7 +1134,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/r_shoulder_pitch_link.STL" />
+          filename="package://hi_23dof/meshes/r_shoulder_pitch_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -1178,7 +1178,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/r_shoulder_roll_link.STL" />
+          filename="package://hi_23dof/meshes/r_shoulder_roll_link.STL" />
       </geometry>
       <material
         name="">
@@ -1192,7 +1192,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/r_shoulder_roll_link.STL" />
+          filename="package://hi_23dof/meshes/r_shoulder_roll_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -1236,7 +1236,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/r_upper_arm_link.STL" />
+          filename="package://hi_23dof/meshes/r_upper_arm_link.STL" />
       </geometry>
       <material
         name="">
@@ -1250,7 +1250,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/r_upper_arm_link.STL" />
+          filename="package://hi_23dof/meshes/r_upper_arm_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -1294,7 +1294,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/r_elbow_link.STL" />
+          filename="package://hi_23dof/meshes/r_elbow_link.STL" />
       </geometry>
       <material
         name="">
@@ -1308,7 +1308,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/r_elbow_link.STL" />
+          filename="package://hi_23dof/meshes/r_elbow_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -1352,7 +1352,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/r_wrist_link.STL" />
+          filename="package://hi_23dof/meshes/r_wrist_link.STL" />
       </geometry>
       <material
         name="">
@@ -1366,7 +1366,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/r_wrist_link.STL" />
+          filename="package://hi_23dof/meshes/r_wrist_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -1410,7 +1410,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/head_yaw_link.STL" />
+          filename="package://hi_23dof/meshes/head_yaw_link.STL" />
       </geometry>
       <material
         name="">
@@ -1424,11 +1424,11 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/head_yaw_link.STL" />
+          filename="package://hi_23dof/meshes/head_yaw_link.STL" />
       </geometry>
     </collision>
   </link>
-  <joint
+  <!-- <joint
     name="head_yaw_joint"
     type="revolute">
     <origin
@@ -1445,7 +1445,7 @@
       upper="2.0944"
       effort="1.8"
       velocity="30.37" />
-  </joint>
+  </joint> -->
   <link
     name="head_pitch_link">
     <inertial>
@@ -1468,7 +1468,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/head_pitch_link.STL" />
+          filename="package://hi_23dof/meshes/head_pitch_link.STL" />
       </geometry>
       <material
         name="">
@@ -1482,11 +1482,11 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/head_pitch_link.STL" />
+          filename="package://hi_23dof/meshes/head_pitch_link.STL" />
       </geometry>
     </collision>
   </link>
-  <joint
+  <!-- <joint
     name="head_pitch_joint"
     type="revolute">
     <origin
@@ -1503,5 +1503,5 @@
       upper="1.0123"
       effort="1.8"
       velocity="30.37" />
-  </joint>
+  </joint> -->
 </robot>

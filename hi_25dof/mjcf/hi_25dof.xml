@@ -1,6 +1,10 @@
 <mujoco model="hi_25dof">
   <compiler angle="radian" meshdir="../meshes/"/>
   <!-- <statistic meansize="0.144785" extent="1.23314" center="0.025392 2.0634e-05 -0.245975"/> -->
+ 
+   <statistic center="0 0 0.1" extent="0.8"/>
+
+
   <default>
     <joint damping="0.001" armature="0.01" frictionloss="0.1"/>
   </default>
@@ -31,9 +35,13 @@
     <mesh name="r_wrist_link" file="r_wrist_link.STL"/>
     <mesh name="head_yaw_link" file="head_yaw_link.STL"/>
     <mesh name="head_pitch_link" file="head_pitch_link.STL"/>
+    
+
   </asset>
 
   <worldbody>
+  
+  
     <body name="base_link" pos="0 0 0.5">
       <site name="imu" size="0.01" pos="-0.0 -0.0 0.0" />
       <inertial pos="0 0 -0.0394294" quat="0.707104 0.707104 -0.00191349 -0.00191349" mass="1.42581" diaginertia="0.00205355 0.0018257 0.000501455"/>

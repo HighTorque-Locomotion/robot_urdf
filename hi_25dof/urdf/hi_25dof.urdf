@@ -45,13 +45,20 @@
       </material>
     </visual>
     <collision>
-      <origin
+      <!-- <origin
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
           filename="package://hi_25dof/meshes/base_link.STL" />
+      </geometry> -->
+        <origin
+        xyz="0.025 0.0 -0.05"
+        rpy="0 0 0" />
+      <geometry>
+				<box size="0.12 0.2 0.22" />
       </geometry>
+
     </collision>
   </link>
   <link
@@ -85,13 +92,20 @@
       </material>
     </visual>
     <collision>
-      <origin
+      <!-- <origin
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
           filename="package://hi_25dof/meshes/l_hip_pitch_link.STL" />
+      </geometry> -->
+      <origin
+        xyz="0 0.04 0"
+        rpy="0 0 0" />
+      <geometry>
+				<box size="0.06 0.07 0.06" />
       </geometry>
+
     </collision>
   </link>
   <joint
@@ -143,13 +157,21 @@
       </material>
     </visual>
     <collision>
-      <origin
+      <!-- <origin
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
           filename="package://hi_25dof/meshes/l_hip_roll_Link.STL" />
       </geometry>
+ -->
+      <origin
+        xyz="-0.03 0 -0.09"
+        rpy="0 0 0" />
+      <geometry>
+				<box size="0.06 0.07 0.06" />
+      </geometry>
+
     </collision>
   </link>
   <joint
@@ -171,7 +193,7 @@
       velocity="5.55" />
   </joint>
   <link
-    name="l_hip_thigh_Link">
+    name="l_hip_thigh_link">
     <inertial>
       <origin
         xyz="0 -0.00080909 -0.059296"
@@ -192,7 +214,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/l_hip_thigh_Link.STL" />
+          filename="package://hi_25dof/meshes/l_hip_thigh_link.STL" />
       </geometry>
       <material
         name="">
@@ -201,13 +223,20 @@
       </material>
     </visual>
     <collision>
-      <origin
+      <!-- <origin
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/l_hip_thigh_Link.STL" />
+          filename="package://hi_25dof/meshes/l_hip_thigh_link.STL" />
+      </geometry> -->
+      <origin
+        xyz="0 0 -0.005"
+        rpy="0 0 0" />
+      <geometry>
+				<box size="0.01 0.01 0.01" />
       </geometry>
+
     </collision>
   </link>
   <joint
@@ -219,7 +248,7 @@
     <parent
       link="l_hip_roll_Link" />
     <child
-      link="l_hip_thigh_Link" />
+      link="l_hip_thigh_link" />
     <axis
       xyz="0 0 1" />
     <limit
@@ -229,7 +258,7 @@
       velocity="5.55" />
   </joint>
   <link
-    name="l_hip_calf_Link">
+    name="l_hip_calf_link">
     <inertial>
       <origin
         xyz="0.0010123 -0.0024674 -0.064494"
@@ -250,7 +279,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/l_hip_calf_Link.STL" />
+          filename="package://hi_25dof/meshes/l_hip_calf_link.STL" />
       </geometry>
       <material
         name="">
@@ -259,13 +288,21 @@
       </material>
     </visual>
     <collision>
-      <origin
+      <!-- <origin
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/l_hip_calf_Link.STL" />
+          filename="package://hi_25dof/meshes/l_hip_calf_link.STL" />
+      </geometry> -->
+
+      <origin
+        xyz="-0.005 0.03 -0.06"
+        rpy="0 0 0" />
+      <geometry>
+				<box size="0.06 0.06 0.21" />
       </geometry>
+
     </collision>
   </link>
   <joint
@@ -275,9 +312,9 @@
       xyz="0 0.00375 -0.097"
       rpy="0 0 0" />
     <parent
-      link="l_hip_thigh_Link" />
+      link="l_hip_thigh_link" />
     <child
-      link="l_hip_calf_Link" />
+      link="l_hip_calf_link" />
     <axis
       xyz="0 1 0" />
     <limit
@@ -287,7 +324,7 @@
       velocity="5.55" />
   </joint>
   <link
-    name="l_ankle_pitch_Link">
+    name="l_ankle_pitch_link">
     <inertial>
       <origin
         xyz="0 0 0"
@@ -308,7 +345,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/l_ankle_pitch_Link.STL" />
+          filename="package://hi_25dof/meshes/l_ankle_pitch_link.STL" />
       </geometry>
       <material
         name="">
@@ -317,13 +354,21 @@
       </material>
     </visual>
     <collision>
-      <origin
+      <!-- <origin
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/l_ankle_pitch_Link.STL" />
+          filename="package://hi_25dof/meshes/l_ankle_pitch_link.STL" />
+      </geometry> -->
+
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+				<box size="0.01 0.01 0.01" />
       </geometry>
+
     </collision>
   </link>
   <joint
@@ -333,9 +378,9 @@
       xyz="0 -0.00375 -0.19945"
       rpy="0 0 0" />
     <parent
-      link="l_hip_calf_Link" />
+      link="l_hip_calf_link" />
     <child
-      link="l_ankle_pitch_Link" />
+      link="l_ankle_pitch_link" />
     <axis
       xyz="0 1 0" />
     <limit
@@ -345,7 +390,7 @@
       velocity="5.45" />
   </joint>
   <link
-    name="l_ankle_roll_Link">
+    name="l_ankle_roll_link">
     <inertial>
       <origin
         xyz="0.017291 0.00079987 -0.030752"
@@ -366,7 +411,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/l_ankle_roll_Link.STL" />
+          filename="package://hi_25dof/meshes/l_ankle_roll_link.STL" />
       </geometry>
       <material
         name="">
@@ -380,7 +425,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/l_ankle_roll_Link.STL" />
+          filename="package://hi_25dof/meshes/l_ankle_roll_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -391,9 +436,9 @@
       xyz="0 0 0"
       rpy="0 0 0" />
     <parent
-      link="l_ankle_pitch_Link" />
+      link="l_ankle_pitch_link" />
     <child
-      link="l_ankle_roll_Link" />
+      link="l_ankle_roll_link" />
     <axis
       xyz="1 0 0" />
     <limit
@@ -403,7 +448,7 @@
       velocity="5.45" />
   </joint>
   <link
-    name="r_hip_pitch_Link">
+    name="r_hip_pitch_link">
     <inertial>
       <origin
         xyz="0.0003884 -0.067835 -8.28E-05"
@@ -424,7 +469,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/r_hip_pitch_Link.STL" />
+          filename="package://hi_25dof/meshes/r_hip_pitch_link.STL" />
       </geometry>
       <material
         name="">
@@ -433,13 +478,21 @@
       </material>
     </visual>
     <collision>
-      <origin
+      <!-- <origin
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/r_hip_pitch_Link.STL" />
+          filename="package://hi_25dof/meshes/r_hip_pitch_link.STL" />
+      </geometry> -->
+
+      <origin
+        xyz="0 -0.04 0"
+        rpy="0 0 0" />
+      <geometry>
+				<box size="0.06 0.07 0.06" />
       </geometry>
+
     </collision>
   </link>
   <joint
@@ -451,7 +504,7 @@
     <parent
       link="base_link" />
     <child
-      link="r_hip_pitch_Link" />
+      link="r_hip_pitch_link" />
     <axis
       xyz="0 1 0" />
     <limit
@@ -461,7 +514,7 @@
       velocity="5.55" />
   </joint>
   <link
-    name="r_hip_roll_Link">
+    name="r_hip_roll_link">
     <inertial>
       <origin
         xyz="0.0009598 -0.0001312 -0.081116"
@@ -482,7 +535,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/r_hip_roll_Link.STL" />
+          filename="package://hi_25dof/meshes/r_hip_roll_link.STL" />
       </geometry>
       <material
         name="">
@@ -491,13 +544,21 @@
       </material>
     </visual>
     <collision>
-      <origin
+      <!-- <origin
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://hi_25dof/meshes/r_hip_roll_Link.STL" />
+          filename="package://hi_25dof/meshes/r_hip_roll_link.STL" />
+      </geometry> -->
+
+      <origin
+        xyz="-0.03 0 -0.09"
+        rpy="0 0 0" />
+      <geometry>
+				<box size="0.06 0.07 0.06" />
       </geometry>
+
     </collision>
   </link>
   <joint
@@ -507,9 +568,9 @@
       xyz="0 -0.07 0"
       rpy="0 0 0" />
     <parent
-      link="r_hip_pitch_Link" />
+      link="r_hip_pitch_link" />
     <child
-      link="r_hip_roll_Link" />
+      link="r_hip_roll_link" />
     <axis
       xyz="1 0 0" />
     <limit
@@ -549,13 +610,21 @@
       </material>
     </visual>
     <collision>
-      <origin
+      <!-- <origin
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
           filename="package://hi_25dof/meshes/r_hip_thigh_link.STL" />
+      </geometry> -->
+
+      <origin
+        xyz="0 0 -0.005"
+        rpy="0 0 0" />
+      <geometry>
+				<box size="0.01 0.01 0.01" />
       </geometry>
+
     </collision>
   </link>
   <joint
@@ -565,7 +634,7 @@
       xyz="0 0 -0.095"
       rpy="0 0 0" />
     <parent
-      link="r_hip_roll_Link" />
+      link="r_hip_roll_link" />
     <child
       link="r_hip_thigh_link" />
     <axis
@@ -607,13 +676,21 @@
       </material>
     </visual>
     <collision>
-      <origin
+      <!-- <origin
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
           filename="package://hi_25dof/meshes/r_hip_calf_link.STL" />
+      </geometry> -->
+
+      <origin
+        xyz="-0.005 -0.03 -0.06"
+        rpy="0 0 0" />
+      <geometry>
+				<box size="0.06 0.06 0.21" />
       </geometry>
+
     </collision>
   </link>
   <joint
@@ -665,13 +742,20 @@
       </material>
     </visual>
     <collision>
-      <origin
+      <!-- <origin
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
           filename="package://hi_25dof/meshes/r_ankle_pitch_link.STL" />
+      </geometry> -->
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+				<box size="0.01 0.01 0.01" />
       </geometry>
+
     </collision>
   </link>
   <joint
@@ -781,12 +865,18 @@
       </material>
     </visual>
     <collision>
-      <origin
+      <!-- <origin
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
           filename="package://hi_25dof/meshes/waist_yaw_link.STL" />
+      </geometry> -->
+      <origin
+        xyz="0 0 -0.025"
+        rpy="0 0 0" />
+      <geometry>
+				<box size="0.09 0.07 0.09" />
       </geometry>
     </collision>
   </link>
@@ -839,13 +929,22 @@
       </material>
     </visual>
     <collision>
-      <origin
+      <!-- <origin
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
           filename="package://hi_25dof/meshes/l_shoulder_pitch_link.STL" />
+      </geometry> -->
+
+      <origin
+        xyz="0 0.035 0"
+        rpy="0 0 0" />
+      <geometry>
+				<box size="0.05 0.05 0.05" />
       </geometry>
+
+
     </collision>
   </link>
   <joint
@@ -897,13 +996,21 @@
       </material>
     </visual>
     <collision>
-      <origin
+      <!-- <origin
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
           filename="package://hi_25dof/meshes/l_shoulder_roll_link.STL" />
+      </geometry> -->
+
+      <origin
+        xyz="0.025 0.00 -0.067"
+        rpy="0 0 0" />
+      <geometry>
+				<box size="0.05 0.05 0.05" />
       </geometry>
+
     </collision>
   </link>
   <joint
@@ -955,13 +1062,21 @@
       </material>
     </visual>
     <collision>
-      <origin
+      <!-- <origin
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
           filename="package://hi_25dof/meshes/l_upper_arm_link.STL" />
+      </geometry> -->
+
+      <origin
+        xyz="0 0 -0.027"
+        rpy="0 0 0" />
+      <geometry>
+				<box size="0.05 0.05 0.05" />
       </geometry>
+
     </collision>
   </link>
   <joint
@@ -1013,13 +1128,21 @@
       </material>
     </visual>
     <collision>
-      <origin
+      <!-- <origin
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
           filename="package://hi_25dof/meshes/l_elbow_link.STL" />
+      </geometry> -->
+
+      <origin
+        xyz="0.0 -0.024 -0.067"
+        rpy="0 0 0" />
+      <geometry>
+				<box size="0.05 0.05 0.05" />
       </geometry>
+
     </collision>
   </link>
   <joint
@@ -1071,13 +1194,24 @@
       </material>
     </visual>
     <collision>
-      <origin
+      <!-- <origin
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
           filename="package://hi_25dof/meshes/l_wrist_link.STL" />
+      </geometry> -->
+
+      <origin
+        xyz="0 0 -0.043"
+        rpy="0 0 0" />
+      <geometry>
+				<box size="0.02 0.02 0.05" />
+        <!--mesh
+          filename="package://hi_25dof_250607/meshes/l_wrist_link.STL" /-->
       </geometry>
+
+
     </collision>
   </link>
   <joint
@@ -1129,13 +1263,21 @@
       </material>
     </visual>
     <collision>
-      <origin
+      <!-- <origin
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
           filename="package://hi_25dof/meshes/r_shoulder_pitch_link.STL" />
+      </geometry> -->
+
+      <origin
+        xyz="0 -0.035 0"
+        rpy="0 0 0" />
+      <geometry>
+				<box size="0.05 0.05 0.05" />
       </geometry>
+
     </collision>
   </link>
   <joint
@@ -1187,13 +1329,21 @@
       </material>
     </visual>
     <collision>
-      <origin
+      <!-- <origin
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
           filename="package://hi_25dof/meshes/r_shoulder_roll_link.STL" />
+      </geometry> -->
+
+      <origin
+        xyz="0.025 0 -0.067"
+        rpy="0 0 0" />
+      <geometry>
+				<box size="0.05 0.05 0.05" />
       </geometry>
+
     </collision>
   </link>
   <joint
@@ -1245,13 +1395,22 @@
       </material>
     </visual>
     <collision>
-      <origin
+      <!-- <origin
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
           filename="package://hi_25dof/meshes/r_upper_arm_link.STL" />
+      </geometry> -->
+
+      <origin
+        xyz="0 0 -0.027"
+        rpy="0 0 0" />
+      <geometry>
+				<box size="0.05 0.05 0.05" />
       </geometry>
+
+
     </collision>
   </link>
   <joint
@@ -1303,13 +1462,22 @@
       </material>
     </visual>
     <collision>
-      <origin
+      <!-- <origin
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
           filename="package://hi_25dof/meshes/r_elbow_link.STL" />
+      </geometry> -->
+
+      <origin
+        xyz="0.0 -0.024 -0.067"
+        rpy="0 0 0" />
+      <geometry>
+				<box size="0.05 0.05 0.05" />
       </geometry>
+
+
     </collision>
   </link>
   <joint
@@ -1361,13 +1529,20 @@
       </material>
     </visual>
     <collision>
-      <origin
+      <!-- <origin
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
           filename="package://hi_25dof/meshes/r_wrist_link.STL" />
+      </geometry> -->
+      <origin
+        xyz="0 0 -0.043"
+        rpy="0 0 0" />
+      <geometry>
+				<box size="0.02 0.02 0.05" />
       </geometry>
+
     </collision>
   </link>
   <joint
@@ -1419,13 +1594,21 @@
       </material>
     </visual>
     <collision>
-      <origin
+      <!-- <origin
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
           filename="package://hi_25dof/meshes/head_yaw_link.STL" />
+      </geometry> -->
+
+      <origin
+        xyz="0 0 -0.015"
+        rpy="0 0 0" />
+      <geometry>
+				<box size="0.03 0.03 0.03" />
       </geometry>
+
     </collision>
   </link>
   <joint
@@ -1477,13 +1660,21 @@
       </material>
     </visual>
     <collision>
-      <origin
+      <!-- <origin
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
           filename="package://hi_25dof/meshes/head_pitch_link.STL" />
+      </geometry> -->
+
+      <origin
+        xyz="0.01 -0.015 0.025"
+        rpy="0 0 0" />
+      <geometry>
+				<box size="0.1 0.15 0.03" />
       </geometry>
+
     </collision>
   </link>
   <joint

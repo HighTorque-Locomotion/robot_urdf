@@ -944,10 +944,10 @@
     <collision>
 
       <origin
-        xyz="0 0.05 0"
+        xyz="0 0.053 0"
         rpy="0 0 0" />
       <geometry>
-				<box size="0.05 0.05 0.05" />
+				<box size="0.05 0.06 0.05" />
       </geometry>
 
 
@@ -1289,10 +1289,10 @@
       </geometry> -->
 
       <origin
-        xyz="0 -0.05 0"
+        xyz="0 -0.053 0"
         rpy="0 0 0" />
       <geometry>
-				<box size="0.05 0.05 0.05" />
+				<box size="0.05 0.06 0.05" />
       </geometry>
 
     </collision>

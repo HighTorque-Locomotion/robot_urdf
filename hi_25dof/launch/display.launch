@@ -16,5 +16,5 @@
     name="rviz"
     pkg="rviz"
     type="rviz"
-    args="-d $(find hi_25dof)/urdf.rviz" />
+    args="-d $(find hi_25dof)/launch/urdf.rviz" />
 </launch>

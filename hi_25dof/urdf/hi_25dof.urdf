@@ -52,12 +52,15 @@
         <mesh
           filename="package://hi_25dof/meshes/base_link.STL" />
       </geometry> -->
-        <origin
-        xyz="0.0 0.0 0.165"
+
+
+      <origin
+        xyz="0.0 0.0 -0.04"
         rpy="0 0 0" />
       <geometry>
-				<box size="0.12 0.2 0.22" />
+				<box size="0.05 0.1 0.065" />
       </geometry>
+
 
     </collision>
   </link>
@@ -879,6 +882,16 @@
 				<box size="0.09 0.07 0.05" />
       </geometry>
     </collision>
+
+   <collision>
+        <origin
+        xyz="0.0 0.0 0.14"
+        rpy="0 0 0" />
+      <geometry>
+				<box size="0.12 0.2 0.21" />
+      </geometry>
+  </collision>
+
   </link>
   <joint
     name="waist_yaw_joint"

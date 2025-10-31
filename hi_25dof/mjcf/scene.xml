@@ -1,8 +1,9 @@
 <mujoco model="hi_25dof scene">
   <include file="hi_25dof.xml"/>
 
-  <statistic center="0 0 0.1" extent="0.8"/>
-
+     <!-- setup scene -->
+  <statistic extent="0.8" center="0 0 0.5"/>
+  <!-- <statistic meansize="0.144785" extent="1.23314" center="0.025392 2.0634e-05 -0.245975"/> -->
   <visual>
     <headlight diffuse="0.6 0.6 0.6" ambient="0.3 0.3 0.3" specular="0 0 0"/>
     <rgba haze="0.15 0.25 0.35 1"/>
